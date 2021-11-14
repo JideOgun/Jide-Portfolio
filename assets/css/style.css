@@ -12,21 +12,213 @@ body {
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #6d7c2a;
-    color: #ffffff;
+    background-color: #fff;
+    color: #1b0b3f;
+    display: inline-block;
+    width: 210px;
 }
 
 .header h1 {
-    display: inline-block;
-    font-size: 48px;
+    display: flex;
+    font-size: 28px;
+    z-index: 1;
 }
 /*HEADER SECTION END*/
 
-/*ABOUT ME START*/
-.About-Me {
-    padding: 20px;
-    background-color: royalblue;
-    margin: auto;
+/*  nav and UL elements start*/
+
+
+.side-nav {
+    display: inline-block;
+    position: fixed;
+    width: 50px;
+    height: 100%;
+    font-size: 15px;
+    line-height: 2.5;
+    }
+
+.side-nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    
 }
 
+
+.side-nav-container {
+    height: 100%;
+    width: 210px;
+    position: fixed;
+    z-index: 1;
+    top: 140px;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+/* nav UL elements end*/
+
+/*Hero Section start*/
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/IMG_0655.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align:center;
+    margin:auto;
+    padding: 0;
+    background-size: cover;
+    text-align: left;
+}
+
+#hero-text {
+    font-size: 45px;
+    text-align: right;
+    color: bisque;
+}
+
+.innovationtext {
+    background-color: salmon;
+    padding: 10px 10px 10px 10px;
+    box-sizing: inherit;
+}
+
+/*Hero Section End*/
+
+/*ABOUT ME START*/
+#About-me {
+    padding: 80px 195px 200px;
+    background-color: white;
+    margin: auto;
+    text-decoration: none;
+    display: block;
+    background-image: url("../images/content\ background\ img.jpg");
+}
+
+#about-me-p1 {
+padding: 20px 200px ;
+}
+
+#about-me-header {
+    padding: 10px 0px 10px 500px;
+    font-family:  'Times New Roman', Times, serif;
+    font-size: 40px;
+    box-sizing: content-box;
+    background-color: teal;
+    width: 100%;
+    font-weight: 200;
+    line-height: 2rem;
+    color: tomato;
+    font-style: oblique;
+}
 /*ABOUT ME END*/
+
+/*Background Section Start*/
+.Background {
+    padding: 80px 195px 200px;
+    background-color: rgb(225, 169, 65);
+    margin: auto;
+    background-image: url(../images/content\ background\ img\ 2.jpg);
+}
+
+#background-p1 {
+    padding: 20px 200px ;
+    }
+    
+#background-header {
+        padding: 10px 0px 10px 500px;
+    font-family:  'Times New Roman', Times, serif;
+    font-size: 40px;
+    box-sizing: content-box;
+    background-color: teal;
+    width: 100%;
+    font-weight: 200;
+    line-height: 2rem;
+    color: tomato;
+    font-style: oblique;
+}
+
+/*Background section end*/
+
+/*Contact section start*/
+.Contact {
+    padding: 80px 195px 200px;
+    background-color: rgb(11, 10, 68);
+    margin: auto;
+    background-image: url(../images/content\ background\ img\ 3.jpg);
+}
+
+#contact-p1 {
+    padding: 20px 200px ;
+    }
+    
+#contact-header {
+    padding: 10px 0px 10px 500px;
+    font-family:  'Times New Roman', Times, serif;
+    font-size: 40px;
+    box-sizing: content-box;
+    background-color: teal;
+    width: 100%;
+    font-weight: 200;
+    line-height: 2rem;
+    color: tomato;
+    font-style: oblique;
+}
+/*Contact section end*/
+
+
+/*Work section start*/
+.Work {
+    padding: 80px 195px 200px;
+    background-color: rgb(225, 97, 65);
+    margin: auto;
+    background-image: url(../images/content\ background\ img\ 4.jpg);
+}
+
+#work-p1 {
+    padding: 20px 200px ;
+    }
+    
+#work-header {
+    padding: 10px 0px 10px 500px;
+    font-family:  'Times New Roman', Times, serif;
+    font-size: 40px;
+    box-sizing: content-box;
+    background-color: teal;
+    width: 100%;
+    font-weight: 200;
+    line-height: 2rem;
+    color: tomato;
+    font-style: oblique;
+}
+/*Work Section end*/
+
+/*Education section start*/
+.Education {
+    padding: 80px 195px 200px;
+    background-color: rgb(225, 65, 217);
+    margin: auto;
+    background-image: url(../images/content\ background\ img\ 5.jpg);
+}
+
+#education-p1 {
+    padding: 20px 200px ;
+    }
+    
+    #education-header {
+        padding: 10px 0px 10px 500px;
+    font-family:  'Times New Roman', Times, serif;
+    font-size: 40px;
+    box-sizing: content-box;
+    background-color: teal;
+    width: 100%;
+    font-weight: 200;
+    line-height: 2rem;
+    color: tomato;
+    font-style: oblique;
+}
+/*Education section end*/
