@@ -76,7 +76,7 @@ body {
 }
 
 #hero-text {
-    font-size: 45px;
+    font-size: 37px;
     text-align: right;
     color: bisque;
 }
@@ -168,6 +168,29 @@ padding: 20px 200px ;
     color: tomato;
     font-style: oblique;
 }
+
+
+.contact-form {
+    border: 3px solid teal;
+    background-color: rgba(141, 140, 133, 0.8);
+    padding: 20px;
+    color: #024e76;
+    width: 40%;
+    margin:  10px 40px 10px 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);  
+    display: flex; 
+    justify-content: left;
+    
+  }
+  
+  .contact-form button:hover {
+    background-color: #b27a39;  
+  }
+  
+  .contact-form p {
+    margin: 25px 15px 15px 15px;
+  }
 /*Contact section end*/
 
 
@@ -200,17 +223,21 @@ padding: 20px 200px ;
 /*Education section start*/
 .Education {
     padding: 80px 195px 200px;
-    background-color: rgb(225, 65, 217);
     margin: auto;
     background-image: url(../images/content\ background\ img\ 5.jpg);
 }
 
 #education-p1 {
     padding: 20px 200px ;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    font-style: oblique;
+    line-height: 6rem;
+    
     }
     
     #education-header {
-        padding: 10px 0px 10px 500px;
+    padding: 10px 0px 10px 500px;
     font-family:  'Times New Roman', Times, serif;
     font-size: 40px;
     box-sizing: content-box;
@@ -222,3 +249,9 @@ padding: 20px 200px ;
     font-style: oblique;
 }
 /*Education section end*/
+
+/*Footer section start*/
+.footer {
+    text-align: right;
+}
+/*Footer section end*/
