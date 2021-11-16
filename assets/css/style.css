@@ -16,6 +16,7 @@ body {
     color: #1b0b3f;
     width: 210px;
     position: fixed;
+    border:3px solid black;
 }
 
 .header h1 {
@@ -39,7 +40,8 @@ body {
     background-color: #fff;
     z-index: 1;
     position: fixed;
-    margin-left: -15pt;
+    margin-left: -17pt;
+    border:3px solid black;
    }
 
 .side-nav a {
@@ -54,8 +56,8 @@ body {
 
 /*Hero Section start*/
 .hero {
-    height: 800px;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     margin-bottom: 25px;
     background-image: url("../images/IMG_0655.jpg");
     background-position: center;
@@ -63,6 +65,12 @@ body {
     padding: 0;
     background-size: cover;
     text-align: left;
+
+    /*Flexbox stuff*/
+    display: flex;
+
+
+    
 }
 
 
@@ -71,7 +79,7 @@ body {
     font-size: 34px;
     text-align: right;
     color: bisque;
-    padding: 200px 0px 400px 400px;
+    padding: 130px 0px 0px 1020px;
 }
 
 .innovationtext {
@@ -90,6 +98,13 @@ body {
     text-decoration: none;
     display: block;
     background-image: url("../images/content\ background\ img.jpg");
+}
+
+#about-me-box {
+    background-color: white;
+    border:3px solid black;
+    margin: 50px 50px 70px 50px;
+
 }
 
 #about-me-p1 {
@@ -116,6 +131,12 @@ padding: 20px 200px ;
     background-color: rgb(225, 169, 65);
     margin: auto;
     background-image: url(../images/content\ background\ img\ 2.jpg);
+}
+
+#background-box {
+    background-color: white;
+    border:3px solid black;
+    margin: 50px 50px 70px 50px;
 }
 
 #background-p1 {
@@ -145,6 +166,11 @@ padding: 20px 200px ;
     background-image: url(../images/content\ background\ img\ 3.jpg);
 }
 
+#contact-box {
+    background-color: white;
+    border:3px solid black;
+    margin: 50px 50px 70px 50px;
+}
 #contact-p1 {
     padding: 20px 200px ;
     }
@@ -195,6 +221,13 @@ padding: 20px 200px ;
     background-image: url(../images/content\ background\ img\ 4.jpg);
 }
 
+#work-box {
+    background-color: white;
+    border:3px solid black;
+    margin: 50px 50px 70px 50px;
+
+}
+
 #work-p1 {
     padding: 20px 200px ;
     }
@@ -220,12 +253,19 @@ padding: 20px 200px ;
     background-image: url(../images/content\ background\ img\ 5.jpg);
 }
 
+#education-box {
+    
+    background-color: white;
+    border:3px solid black;
+    margin: 50px 50px 70px 50px;
+}
+
 #education-p1 {
     padding: 20px 200px ;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 28px;
-    font-style: oblique;
+    font-size: 24px;
     line-height: 6rem;
+    color: rgb(92, 89, 83);
     
     }
     
