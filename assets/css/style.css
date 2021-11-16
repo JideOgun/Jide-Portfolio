@@ -14,8 +14,8 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #fff;
     color: #1b0b3f;
-    display: inline-block;
     width: 210px;
+    position: fixed;
 }
 
 .header h1 {
@@ -29,35 +29,27 @@ body {
 
 
 .side-nav {
-    display: inline-block;
-    position: fixed;
-    width: 50px;
-    height: 100%;
     font-size: 15px;
-    line-height: 2.5;
-    }
-
-.side-nav a {
+    line-height: 6.5;
     padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 20px;
     color: #818181;
     display: block;
-    
-}
-
-
-.side-nav-container {
     height: 100%;
     width: 210px;
-    position: fixed;
-    z-index: 1;
-    top: 140px;
-    left: 0;
     background-color: #fff;
-    overflow-x: hidden;
-    padding-top: 20px;
+    z-index: 1;
+    position: fixed;
+    margin-left: -15pt;
+   }
+
+.side-nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #5f5757;
+    font-family: 'Times New Roman', Times, serif;
 }
+
+
 /* nav UL elements end*/
 
 /*Hero Section start*/
@@ -68,17 +60,18 @@ body {
     background-image: url("../images/IMG_0655.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    text-align:center;
-    margin:auto;
     padding: 0;
     background-size: cover;
     text-align: left;
 }
 
+
+
 #hero-text {
-    font-size: 37px;
+    font-size: 34px;
     text-align: right;
     color: bisque;
+    padding: 200px 0px 400px 400px;
 }
 
 .innovationtext {
@@ -255,3 +248,17 @@ padding: 20px 200px ;
     text-align: right;
 }
 /*Footer section end*/
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px){
+    .innovationtext {
+        color: #1b0b3f;
+    }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px){}
+
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px){}
