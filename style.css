@@ -60,33 +60,24 @@ body {
     height: 100vh;
     width: 100vw;
     margin-bottom: 0;
-    background-image: url("../images/IMG_0655.jpg");
+    background-image: url("../Module-2-challenge/assets/images/IMG_0655.jpg");
     background-position: center;
     background-repeat: no-repeat;
     padding: 0;
     background-size: 100%;
     text-align: left;
-
-    /*Flexbox stuff*/
-    display: flex;
-
-
-    
 }
-
-
 
 #hero-text {
     font-size: 34px;
-    text-align: right;
     color: bisque;
-    padding: 130px 0px 0px 1250px;
+    padding: 120px 0px 0px 1000px;
 }
 
 .innovationtext {
     background-color: salmon;
-    padding: 10px 10px 10px 10px;
-    box-sizing: inherit;
+    padding: 5px 5px 5px 5px;
+    
 }
 
 /*Hero Section End*/
@@ -98,7 +89,7 @@ body {
     margin: auto;
     text-decoration: none;
     display: block;
-    background-image: url("../images/content\ background\ img.jpg");
+    background-image: url("../Module-2-challenge/assets/images/content\ background\ img.jpg");
     border: 2pt solid black;
 }
 
@@ -111,6 +102,11 @@ body {
 
 #about-me-p1 {
 padding: 20px 200px ;
+font-family: 'Times New Roman', Times, serif;
+font-size: 20px;
+line-height: 6rem;
+color: rgb(92, 89, 83);
+display: inline;
 }
 
 #about-me-header {
@@ -132,7 +128,7 @@ padding: 20px 200px ;
     padding: 80px 195px 200px;
     background-color: rgb(225, 169, 65);
     margin: auto;
-    background-image: url(../images/content\ background\ img\ 2.jpg);
+    background-image: url(../Module-2-challenge/assets/images/content\ background\ img\ 2.jpg);
     border: 2pt solid black;
 }
 
@@ -144,10 +140,14 @@ padding: 20px 200px ;
 
 #background-p1 {
     padding: 20px 200px ;
+font-family: 'Times New Roman', Times, serif;
+font-size: 20px;
+line-height: 6rem;
+color: rgb(92, 89, 83);
     }
     
 #background-header {
-        padding: 10px 0px 10px 500px;
+   padding: 10px 0px 10px 500px;
     font-family:  'Times New Roman', Times, serif;
     font-size: 40px;
     box-sizing: content-box;
@@ -164,9 +164,9 @@ padding: 20px 200px ;
 /*Contact section start*/
 .Contact {
     padding: 80px 195px 200px;
-    background-color: rgb(11, 10, 68);
+    background-color: white;
     margin: auto;
-    background-image: url(../images/content\ background\ img\ 3.jpg);
+    background-image: url(../Module-2-challenge/assets/images/content\ background\ img\ 3.jpg);
     border: 2pt solid black;
 }
 
@@ -176,7 +176,11 @@ padding: 20px 200px ;
     margin: 50px 50px 70px 50px;
 }
 #contact-p1 {
-    padding: 20px 200px ;
+   padding: 20px 200px ;
+font-family: 'Times New Roman', Times, serif;
+font-size: 20px;
+line-height: 6rem;
+color: rgb(92, 89, 83);
     }
     
 #contact-header {
@@ -222,12 +226,11 @@ padding: 20px 200px ;
     padding: 80px 195px 200px;
     background-color: white;
     margin: auto;
-    background-image: url(../images/content\ background\ img\ 4.jpg);
+    background-image: url(../Module-2-challenge/assets/images/content\ background\ img\ 4.jpg);
     border: 2pt solid black;
 }
 
 #work-box {
-    
     background-color: white;
     border:3px solid black;
     margin: 50px 50px 70px 50px;
@@ -235,17 +238,24 @@ padding: 20px 200px ;
 
 #work-p1 {
     padding: 20px 20px ;
-    
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 6rem;
+    color: rgb(92, 89, 83);    
 }
 
 #work-p1 img {
-    /* padding: 20px 20px ; */
+    padding: 20px 20px ;
     border: 1pt solid black;
     max-width: 100%;
     max-height: 100%;
 }
 #work-p2 {
-    padding: 20px 20px ;  
+    padding: 20px 20px ; 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 6rem;
+    color: rgb(92, 89, 83);   
 }
 
 #work-p2 img {
@@ -296,7 +306,7 @@ padding: 20px 200px ;
 .Education {
     padding: 80px 195px 200px;
     margin: auto;
-    background-image: url(../images/content\ background\ img\ 5.jpg);
+    background-image: url(../Module-2-challenge/assets/images/content\ background\ img\ 5.jpg);
     border: 2pt solid black;
 }
 
@@ -340,6 +350,7 @@ padding: 20px 200px ;
 @media screen and (max-width: 980px){
     .innovationtext {
         color: #1b0b3f;
+        text-align: right;
     }
 }
 
@@ -347,6 +358,7 @@ padding: 20px 200px ;
 @media screen and (max-width: 768px){
     .innovationtext {
         color: #a18f25;
+        text-align: right;
     }
 }
 
@@ -355,5 +367,6 @@ padding: 20px 200px ;
 @media screen and (max-width: 575px){
     .innovationtext {
         color: #b61515;
+        text-align: right;
     }
 }
