@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #d9dcd6;
+    background-color: white;
 }
 
 /*HEADER SECTION START*/
@@ -16,7 +16,7 @@ body {
     color: #1b0b3f;
     width: 210px;
     position: fixed;
-    border:3px solid black;
+    border:1px solid black;
 }
 
 .header h1 {
@@ -40,8 +40,9 @@ body {
     background-color: #fff;
     z-index: 1;
     position: fixed;
-    margin-left: -17pt;
-    border:3px solid black;
+    margin-left: -16pt;
+    margin-top: 20pt;
+    border:1px solid black;
    }
 
 .side-nav a {
@@ -58,12 +59,12 @@ body {
 .hero {
     height: 100vh;
     width: 100vw;
-    margin-bottom: 25px;
+    margin-bottom: 0;
     background-image: url("../images/IMG_0655.jpg");
     background-position: center;
     background-repeat: no-repeat;
     padding: 0;
-    background-size: cover;
+    background-size: 100%;
     text-align: left;
 
     /*Flexbox stuff*/
@@ -79,7 +80,7 @@ body {
     font-size: 34px;
     text-align: right;
     color: bisque;
-    padding: 130px 0px 0px 1020px;
+    padding: 130px 0px 0px 1250px;
 }
 
 .innovationtext {
@@ -98,6 +99,7 @@ body {
     text-decoration: none;
     display: block;
     background-image: url("../images/content\ background\ img.jpg");
+    border: 2pt solid black;
 }
 
 #about-me-box {
@@ -131,6 +133,7 @@ padding: 20px 200px ;
     background-color: rgb(225, 169, 65);
     margin: auto;
     background-image: url(../images/content\ background\ img\ 2.jpg);
+    border: 2pt solid black;
 }
 
 #background-box {
@@ -164,6 +167,7 @@ padding: 20px 200px ;
     background-color: rgb(11, 10, 68);
     margin: auto;
     background-image: url(../images/content\ background\ img\ 3.jpg);
+    border: 2pt solid black;
 }
 
 #contact-box {
@@ -216,21 +220,63 @@ padding: 20px 200px ;
 /*Work section start*/
 .Work {
     padding: 80px 195px 200px;
-    background-color: rgb(225, 97, 65);
+    background-color: white;
     margin: auto;
     background-image: url(../images/content\ background\ img\ 4.jpg);
+    border: 2pt solid black;
 }
 
 #work-box {
+    
     background-color: white;
     border:3px solid black;
     margin: 50px 50px 70px 50px;
-
 }
 
 #work-p1 {
-    padding: 20px 200px ;
-    }
+    padding: 20px 20px ;
+    
+}
+
+#work-p1 img {
+    /* padding: 20px 20px ; */
+    border: 1pt solid black;
+    max-width: 100%;
+    max-height: 100%;
+}
+#work-p2 {
+    padding: 20px 20px ;  
+}
+
+#work-p2 img {
+    padding: 20px 20px;
+    border: 1pt solid black;
+    max-width: 100%;
+    max-height: 100%;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 96%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  .runbuddyclass {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .runbuddyclass:hover .overlay {
+    opacity: 1;
+  }
     
 #work-header {
     padding: 10px 0px 10px 500px;
@@ -251,6 +297,7 @@ padding: 20px 200px ;
     padding: 80px 195px 200px;
     margin: auto;
     background-image: url(../images/content\ background\ img\ 5.jpg);
+    border: 2pt solid black;
 }
 
 #education-box {
@@ -297,8 +344,16 @@ padding: 20px 200px ;
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
-@media screen and (max-width: 768px){}
+@media screen and (max-width: 768px){
+    .innovationtext {
+        color: #a18f25;
+    }
+}
 
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-@media screen and (max-width: 575px){}
+@media screen and (max-width: 575px){
+    .innovationtext {
+        color: #b61515;
+    }
+}
