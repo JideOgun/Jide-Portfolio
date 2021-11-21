@@ -60,7 +60,7 @@ body {
     height: 100vh;
     width: 100vw;
     margin-bottom: 0;
-    background-image: url("../Module-2-challenge/assets/images/IMG_0655.jpg");
+    background-image: url("./assets/images/IMG_0655.jpg");
     background-position: center;
     background-repeat: no-repeat;
     padding: 0;
@@ -89,7 +89,7 @@ body {
     margin: auto;
     text-decoration: none;
     display: block;
-    background-image: url("../Module-2-challenge/assets/images/content\ background\ img.jpg");
+    background-image: url("./assets/images/content\ background\ img.jpg");
     border: 2pt solid black;
 }
 
@@ -128,7 +128,7 @@ display: inline;
     padding: 80px 195px 200px;
     background-color: rgb(225, 169, 65);
     margin: auto;
-    background-image: url(../Module-2-challenge/assets/images/content\ background\ img\ 2.jpg);
+    background-image: url(./assets/images/content\ background\ img\ 2.jpg);
     border: 2pt solid black;
 }
 
@@ -166,7 +166,7 @@ color: rgb(92, 89, 83);
     padding: 80px 195px 200px;
     background-color: white;
     margin: auto;
-    background-image: url(../Module-2-challenge/assets/images/content\ background\ img\ 3.jpg);
+    background-image: url(./assets/images/content\ background\ img\ 3.jpg);
     border: 2pt solid black;
 }
 
@@ -226,7 +226,7 @@ color: rgb(92, 89, 83);
     padding: 80px 195px 200px;
     background-color: white;
     margin: auto;
-    background-image: url(../Module-2-challenge/assets/images/content\ background\ img\ 4.jpg);
+    background-image: url(./assets/images/content\ background\ img\ 4.jpg);
     border: 2pt solid black;
 }
 
@@ -306,7 +306,7 @@ color: rgb(92, 89, 83);
 .Education {
     padding: 80px 195px 200px;
     margin: auto;
-    background-image: url(../Module-2-challenge/assets/images/content\ background\ img\ 5.jpg);
+    background-image: url(./assets/images/content\ background\ img\ 5.jpg);
     border: 2pt solid black;
 }
 
