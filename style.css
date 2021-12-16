@@ -288,6 +288,25 @@ color: rgb(92, 89, 83);
     opacity: 1;
   }
     
+.wd-class {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+  .wd-class:hover .overlay {
+    opacity: 1;
+  }
+
+  .wds-class {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+  .wds-class:hover .overlay {
+    opacity: 1;
+  }
+
+
 #work-header {
     padding: 10px 0px 10px 500px;
     font-family:  'Times New Roman', Times, serif;
