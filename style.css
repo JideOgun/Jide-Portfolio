@@ -68,17 +68,7 @@ body {
     text-align: left;
 }
 
-#hero-text {
-    font-size: 34px;
-    color: bisque;
-    padding: 120px 0px 0px 1000px;
-}
 
-.innovationtext {
-    background-color: salmon;
-    padding: 5px 5px 5px 5px;
-    
-}
 
 /*Hero Section End*/
 
@@ -97,16 +87,14 @@ body {
     background-color: white;
     border:3px solid black;
     margin: 50px 50px 70px 50px;
-
 }
 
 #about-me-p1 {
-padding: 20px 200px ;
-font-family: 'Times New Roman', Times, serif;
-font-size: 20px;
-line-height: 6rem;
-color: rgb(92, 89, 83);
-display: inline;
+    padding: 20px 200px ;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 6rem;
+    color: rgb(92, 89, 83);
 }
 
 #about-me-header {
@@ -305,6 +293,18 @@ color: rgb(92, 89, 83);
   .wds-class:hover .overlay {
     opacity: 1;
   }
+
+  
+  .mm-class {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+  .mm-class:hover .overlay {
+    opacity: 1;
+  }
+
+
 
 
 #work-header {
