@@ -1,4 +1,4 @@
-#Note 
+# Note 
 I changed the repo name, if you navigate to the deployment page and it loads the wrong url please use this https://jideogun.github.io/Jide-Portfolio/
 
 # Portfolio
