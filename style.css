@@ -93,7 +93,7 @@ body {
     padding: 20px 200px ;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
-    line-height: 6rem;
+    line-height: 3rem;
     color: rgb(92, 89, 83);
 }
 
@@ -301,6 +301,15 @@ color: rgb(92, 89, 83);
     max-width: 100%;
 }
   .mm-class:hover .overlay {
+    opacity: 1;
+  }
+
+  .teksess-class {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+  .teksess-class:hover .overlay {
     opacity: 1;
   }
 
