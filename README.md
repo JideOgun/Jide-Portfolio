@@ -5,6 +5,10 @@ I changed the repo name, if you navigate to the deployment page and it loads the
 
 Creating a Portfolio showcasing the coding projects i've embarked on.
 
+## TekSess | JavaScript | Node.js | Handlebars.js | Express.js | Sass
+A social website where users can find valuable insights from previous employees about a company's culture, benefits, salaries and more.
+The user will be able to rate and review by leaving reviews on Companies.
+
 ## Professional ReadMe Generator Node.js | JavaScript | jQuery 
 ● ReadMe generator using Node.js that can be accessed through the Command Line Interface. It utilizes the Inquirer module which prompts users for input, and then putsthe inputsinto their respective sections. When the prompts are finished, a read.md file will be generated as a markdown. 
 
