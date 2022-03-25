@@ -13,23 +13,22 @@ function Header() {
     const [currentPage, setCurrentPage] = useState('Home') 
     console.log(currentPage)
       const handleRender = () => {
-          if(currentPage === 'Home') {
-              return <Home />
-          }
-          if(currentPage === 'Projects') {
+        if(currentPage === 'Projects') {
             return <Projects/>
         }
-          if(currentPage === 'Background') {
+          else if(currentPage === 'Background') {
             return <Background/>
           }
-          if(currentPage === 'AboutMe') {
+          else if(currentPage === 'AboutMe') {
               return <AboutMe/>
           }
-          if(currentPage === 'Education') {
+          else if(currentPage === 'Education') {
             return <Education/>
         }
-        if(currentPage === 'Contact') {
+        else if(currentPage === 'Contact') {
             return <Contact/>
+        } else {
+            return <Home />
         }
       }
     

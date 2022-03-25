@@ -4,7 +4,7 @@ import React from 'react';
 
 function Education () {
     return ( <div>
-        Education and Certifications
+        Education and Certifications.
     </div> );
 }
 

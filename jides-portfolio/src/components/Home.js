@@ -3,6 +3,7 @@ import backgroundImg from "../assets/images/IMG_0655.jpg";
 import Header from "./Header";
 import Footer from "./Footer";
 
+
 function Home() {
   return (
     <div
@@ -14,7 +15,11 @@ function Home() {
         width: "100vw",
         height: "160vh",
       }}
-    ></div>
+    >
+      <div>
+      <button className="download"><a className="download" href="../assets/resume/Jide_FS_ Resume_1.0.docx.pdf" download>Download Resume</a></button>  
+      </div>
+    </div>
   );
 }
 
