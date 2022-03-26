@@ -18,7 +18,7 @@ function AboutMe() {
       servo-motors and all sorts of electro-mechanical devices. Also a certified
       Scrum Master in Agile methodologies, and project management. Passionate
       about approaching programming challenges from different angles and
-      collaborating with others to create meaningful web applications.
+      collaborating with others to create meaningful software applications.
     </Card.Text>
     <Card.Body>
       I’m an

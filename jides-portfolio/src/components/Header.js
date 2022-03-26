@@ -3,7 +3,6 @@ import Navigation from './Navigation';
 import Background from './Background';
 import Home from './Home';
 import AboutMe from './AboutMe';
-import Education from './Education';
 import Contact from './Contact';
 import Projects from './Project';
 
@@ -11,7 +10,7 @@ function Header() {
     
 
     const [currentPage, setCurrentPage] = useState('Home') 
-    console.log(currentPage)
+    // console.log(currentPage)
       const handleRender = () => {
         if(currentPage === 'Projects') {
             return <Projects/>
@@ -22,9 +21,6 @@ function Header() {
           else if(currentPage === 'AboutMe') {
               return <AboutMe/>
           }
-          else if(currentPage === 'Education') {
-            return <Education/>
-        }
         else if(currentPage === 'Contact') {
             return <Contact/>
         } else {

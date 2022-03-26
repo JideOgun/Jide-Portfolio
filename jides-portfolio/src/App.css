@@ -35,7 +35,7 @@
 .download {
   text-decoration: none;
   color: salmon;
-  font-size: x-large;
+  font-size: medium;
   border-radius: 20px;
   float: left;
 }
@@ -54,3 +54,16 @@
   margin: 30px;
   width: 80rem;
 }
+
+.backgroundcard {
+  border: 1rem solid black;
+  margin: 30px;
+  width: 80rem;
+}
+
+.educationcard {
+  border: 1rem solid black;
+  margin: 30px;
+  width: 80rem;
+}
+
