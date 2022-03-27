@@ -65,37 +65,71 @@ function Projects() {
     },
   ]);
 
+  const [allTech, filteredTech] = useState([])
+
+  const renderCard = () => {
+    if(allTech.length === 0) {
+      return (
+      techProjects.map((project) => {
+      return (
+        <Col key={project.id}>
+          <Card className="projectCard">
+            <Card.Img
+              src={`${project.imgurl}`}
+              style={{ width: "100%", height: "60%" }}
+            />
+            <Card.Link
+              className="imgurl stretched-link"
+              href={`${project.website}`}
+            >
+              {project.name}
+            </Card.Link>
+            <Card.Text>{project.technology}</Card.Text>
+            <Card.Body className="description">
+              {project.description}
+            </Card.Body>
+          </Card>
+        </Col>
+      );
+    }))}
+    else {
+     return (allTech.map((project) => {
+      return (
+        <Col key={project.id}>
+          <Card className="projectCard">
+            <Card.Img
+              src={`${project.imgurl}`}
+              style={{ width: "100%", height: "60%" }}
+            />
+            <Card.Link
+              className="imgurl stretched-link"
+              href={`${project.website}`}
+            >
+              {project.name}
+            </Card.Link>
+            <Card.Text>{project.technology}</Card.Text>
+            <Card.Body className="description">
+              {project.description}
+            </Card.Body>
+          </Card>
+        </Col>
+      );
+    }))}
+  }
+
   return (
     <div>
       <FilterTech
         techProj={techProjects}
         setTechProjects={(proj) => setTechProjects(proj)}
+        allTech={allTech}
+        filteredTech ={filteredTech}
       />
 
       <Container>
         <Row>
-          {techProjects.map((project) => {
-            return (
-              <Col key={project.id}>
-                <Card className="projectCard">
-                  <Card.Img
-                    src={`${project.imgurl}`}
-                    style={{ width: "100%", height: "60%" }}
-                  />
-                  <Card.Link
-                    className="imgurl stretched-link"
-                    href={`${project.website}`}
-                  >
-                    {project.name}
-                  </Card.Link>
-                  <Card.Text>{project.technology}</Card.Text>
-                  <Card.Body className="description">
-                    {project.description}
-                  </Card.Body>
-                </Card>
-              </Col>
-            );
-          })}
+         {renderCard()}
+        
         </Row>
       </Container>
     </div>

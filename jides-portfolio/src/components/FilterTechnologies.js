@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function FilterTech(props) {
-  const { techProj, setTechProjects } = props;
+  const { techProj, setTechProjects, allTech, filteredTech } = props;
   const technologies = [
     { name: "Node.js", id: 1 },
     { name: "Sequelize ORM", id: 2 },
@@ -13,18 +13,22 @@ function FilterTech(props) {
   ];
 
   const [checkbox, setCheckbox] = useState(true);
-
+  
+  
   const handleCheckbox = (e) => {
     setCheckbox(!checkbox);
     console.log(e.target.checked, e.target.name);
     console.log(techProj);
-    const newTech = techProj.filter((tech) => {
+    
+ let newTech = techProj.filter((tech) => {
       console.log(tech.technology);
       return tech.technology.includes(e.target.name)
     });
-    
-    console.log(newTech);
-    setTechProjects(newTech);
+     console.log(newTech);
+     if(!e.target.checked) {
+       newTech=techProj
+     } 
+  filteredTech(newTech)
   };
 
   return (
