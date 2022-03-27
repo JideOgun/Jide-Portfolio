@@ -16,9 +16,7 @@ function Home() {
         height: "160vh",
       }}
     >
-      <div>
-      <button className="download"><a className="download" href="../assets/resume/Jide_FS_ Resume_1.0.docx.pdf" download>Download Resume</a></button>  
-      </div>
+     
     </div>
   );
 }

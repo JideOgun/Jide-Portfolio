@@ -37,7 +37,7 @@
   color: salmon;
   font-size: medium;
   border-radius: 20px;
-  float: left;
+  align-items: center;
 }
 
 .description {

@@ -22,12 +22,6 @@ function FilterTech(props) {
       console.log(tech.technology);
       return tech.technology.includes(e.target.name)
     });
-    // if (e.target.checked && !tech.technology.includes(e.target.name)) {
-    //     return tech.technology === e.target.name;
-    //   }
-    //   else {
-    //      return tech.technology;
-    //   }
     
     console.log(newTech);
     setTechProjects(newTech);
