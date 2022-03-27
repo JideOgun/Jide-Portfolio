@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { Container, Navbar, Nav } from "react-bootstrap";
 
 function Navigation({currentPage, handlePageChange}) {
-  
+  console.log(currentPage)
 
 
   return (
