@@ -3,7 +3,7 @@ import { Card, Container, Row, Col } from "react-bootstrap";
 
 function Background() {
   return (
-    <Container>
+    <Container className="backgroundContainer" >
       <Row>
         <Col>
           <Card className="backgroundcard">

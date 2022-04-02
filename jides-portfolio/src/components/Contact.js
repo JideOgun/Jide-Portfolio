@@ -16,6 +16,9 @@ function Contact() {
           console.log(e.target.value)
       } else if(e.target.name === 'message') {
         setMessage(e.target.value)
+      } 
+       if (e.target.value === '') {
+        setErrorMessage('You need to enter a value')
       }
   };
 
@@ -23,7 +26,7 @@ function Contact() {
     e.preventDefault();
     console.log('Form submit')
     if(!validateEmail(email)) {
-        setErrorMessage('Email or username is invalid')
+        setErrorMessage('Email is invalid')
         return;
     }
     setName('');
@@ -47,11 +50,11 @@ function Contact() {
       <br></br>
       <a href="https://www.github.com/jideogun">Github</a>
       <form className="form" >
-        <input type="text" name="name" value={name} placeholder="Name" onChange={handleInputChange}/>
+        <input type="text" name="name" value={name} placeholder="Name" onChange={handleInputChange} onBlur={handleInputChange}/>
         <br></br>
-        <input type="email" value={email} placeholder="Email" name="email" onChange={handleInputChange}/>
+        <input type="email" value={email} placeholder="Email" name="email" onChange={handleInputChange} onBlur={handleInputChange}/>
         <br></br>
-        <textarea type="text" name="message" value={message} placeholder="leave a message" onChange={handleInputChange}></textarea>
+        <textarea type="text" name="message" value={message} placeholder="leave a message" onChange={handleInputChange} onBlur={handleInputChange}></textarea>
         <br></br>
         <button type="button" placeholder="Email" onClick={handleFormSubmit} >
           Submit

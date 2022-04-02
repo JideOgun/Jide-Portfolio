@@ -14,7 +14,7 @@ function Projects() {
       name: "Teksess",
       id: 1,
       imgurl: teksessImg,
-      technology: ['Node.js', "Javascript", "Sequelize ORM"],
+      technology: ["Node.js", "Javascript", "Sequelize ORM", "MySQL"],
       website: "https://teksess.herokuapp.com/",
       description:
         "Professional social media website that enables users to leave ratings and post/edit/delete reviews on tech Companies",
@@ -23,7 +23,7 @@ function Projects() {
       name: "Music-And-Movies",
       id: 2,
       imgurl: mmImg,
-      technology: ["Javascript", "HTML", "CSS", "RestAPI", "Git"],
+      technology: ["Javascript", "HTML", "CSS", "RestAPI", "GitHub"],
       website: "https://jideogun.github.io/MusicAndMovies/index.html",
       description: "Web app displaying music and movie information",
     },
@@ -31,7 +31,7 @@ function Projects() {
       name: "Budget-Tracker",
       id: 3,
       imgurl: btImg,
-      technology: ["Javascript", "Node.js"],
+      technology: ["Javascript", "Node.js", "MongoDB"],
       website: "https://fathomless-ocean-98711.herokuapp.com/",
       description:
         "Progressive Web Application that enables users to post transactions even when there is no network connectivity",
@@ -40,7 +40,7 @@ function Projects() {
       name: "Jides CMS Tech-Blog",
       id: 4,
       imgurl: cmsImg,
-      technology: ["Javascript", "Heroku", "MySQL", "Sequelize ORM"],
+      technology: ["Javascript", "Heroku", "MySQL", "Sequelize ORM", "Express"],
       website: "https://peaceful-stream-28816.herokuapp.com/",
       description:
         "Content management Blog-Site where developers(users) can publish/edit/delete blog posts and comment on other developers(users) posts as well.",
@@ -65,57 +65,57 @@ function Projects() {
     },
   ]);
 
-  const [allTech, filteredTech] = useState([])
+  const [allTech, filteredTech] = useState([]);
 
   const renderCard = () => {
-    if(allTech.length === 0) {
-      return (
-      techProjects.map((project) => {
-      return (
-        <Col key={project.id}>
-          <Card className="projectCard">
-            <Card.Img
-              src={`${project.imgurl}`}
-              style={{ width: "100%", height: "60%" }}
-            />
-            <Card.Link
-              className="imgurl stretched-link"
-              href={`${project.website}`}
-            >
-              {project.name}
-            </Card.Link>
-            <Card.Text>{project.technology}</Card.Text>
-            <Card.Body className="description">
-              {project.description}
-            </Card.Body>
-          </Card>
-        </Col>
-      );
-    }))}
-    else {
-     return (allTech.map((project) => {
-      return (
-        <Col key={project.id}>
-          <Card className="projectCard">
-            <Card.Img
-              src={`${project.imgurl}`}
-              style={{ width: "100%", height: "60%" }}
-            />
-            <Card.Link
-              className="imgurl stretched-link"
-              href={`${project.website}`}
-            >
-              {project.name}
-            </Card.Link>
-            <Card.Text>{project.technology}</Card.Text>
-            <Card.Body className="description">
-              {project.description}
-            </Card.Body>
-          </Card>
-        </Col>
-      );
-    }))}
-  }
+    if (allTech.length === 0) {
+      return techProjects.map((project) => {
+        return (
+          <Col key={project.id}>
+            <Card className="projectCard">
+              <Card.Img
+                src={`${project.imgurl}`}
+                style={{ width: "100%", height: "60%" }}
+              />
+              <Card.Link
+                className="imgurl stretched-link"
+                href={`${project.website}`}
+              >
+                {project.name}
+              </Card.Link>
+              <Card.Text>{`${project.technology}`}</Card.Text>
+              <Card.Body className="description">
+                {project.description}
+              </Card.Body>
+            </Card>
+          </Col>
+        );
+      });
+    } else {
+      return allTech.map((project) => {
+        return (
+          <Col key={project.id}>
+            <Card className="projectCard">
+              <Card.Img
+                src={`${project.imgurl}`}
+                style={{ width: "100%", height: "60%" }}
+              />
+              <Card.Link
+                className="imgurl stretched-link"
+                href={`${project.website}`}
+              >
+                {project.name}
+              </Card.Link>
+              <Card.Text>{project.technology}</Card.Text>
+              <Card.Body className="description">
+                {project.description}
+              </Card.Body>
+            </Card>
+          </Col>
+        );
+      });
+    }
+  };
 
   return (
     <div>
@@ -123,14 +123,11 @@ function Projects() {
         techProj={techProjects}
         setTechProjects={(proj) => setTechProjects(proj)}
         allTech={allTech}
-        filteredTech ={filteredTech}
+        filteredTech={filteredTech}
       />
 
       <Container>
-        <Row>
-         {renderCard()}
-        
-        </Row>
+        <Row>{renderCard()}</Row>
       </Container>
     </div>
   );

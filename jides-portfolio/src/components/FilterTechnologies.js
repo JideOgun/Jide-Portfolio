@@ -10,6 +10,9 @@ function FilterTech(props) {
     { name: "MySQL", id: 5 },
     { name: "Javascript", id: 6 },
     { name: "jQuery", id: 7 },
+    { name: "MongoDB", id: 8 },
+    { name: "Express", id: 9 },
+    { name: "GraphQL", id: 10 },
   ];
 
   const [checkbox, setCheckbox] = useState(true);
@@ -22,7 +25,7 @@ function FilterTech(props) {
     
  let newTech = techProj.filter((tech) => {
       console.log(tech.technology);
-      return tech.technology.includes(e.target.name)
+      return tech.technology.includes(`${e.target.name}`)
     });
      console.log(newTech);
      if(!e.target.checked) {

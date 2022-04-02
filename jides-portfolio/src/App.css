@@ -59,6 +59,13 @@
   border: 1rem solid black;
   margin: 30px;
   width: 80rem;
+  
+}
+
+.backgroundContainer{
+  /* border: solid 1px black; */
+height: 100%;
+/* background-color: red; */
 }
 
 .educationcard {
@@ -67,3 +74,7 @@
   width: 80rem;
 }
 
+.links {
+  text-decoration: none;
+  color: white;
+}
