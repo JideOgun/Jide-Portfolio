@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Jide-Portfolio/static/css/main.e5cc5688.css",
-    "main.js": "/Jide-Portfolio/static/js/main.4ce1e9fb.js",
+    "main.css": "/Jide-Portfolio/static/css/main.0b9b7698.css",
+    "main.js": "/Jide-Portfolio/static/js/main.adb89dd7.js",
     "static/js/787.2ee7312c.chunk.js": "/Jide-Portfolio/static/js/787.2ee7312c.chunk.js",
     "static/media/IMG_0655.jpg": "/Jide-Portfolio/static/media/IMG_0655.e86862c6047f1532cac1.jpg",
     "static/media/workdayscheduler.gif": "/Jide-Portfolio/static/media/workdayscheduler.5b3f62cdcc4cafa34102.gif",
@@ -12,12 +12,12 @@
     "static/media/budgetTracker.jpg": "/Jide-Portfolio/static/media/budgetTracker.05e8e0c80d983b3c745e.jpg",
     "static/media/homepage.JPG": "/Jide-Portfolio/static/media/homepage.857df8786690f60f6c9d.JPG",
     "index.html": "/Jide-Portfolio/index.html",
-    "main.e5cc5688.css.map": "/Jide-Portfolio/static/css/main.e5cc5688.css.map",
-    "main.4ce1e9fb.js.map": "/Jide-Portfolio/static/js/main.4ce1e9fb.js.map",
+    "main.0b9b7698.css.map": "/Jide-Portfolio/static/css/main.0b9b7698.css.map",
+    "main.adb89dd7.js.map": "/Jide-Portfolio/static/js/main.adb89dd7.js.map",
     "787.2ee7312c.chunk.js.map": "/Jide-Portfolio/static/js/787.2ee7312c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e5cc5688.css",
-    "static/js/main.4ce1e9fb.js"
+    "static/css/main.0b9b7698.css",
+    "static/js/main.adb89dd7.js"
   ]
 }
