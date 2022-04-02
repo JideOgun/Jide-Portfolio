@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { validateEmail } from "../utils/helpers";
+import { Container, Row, Col } from "react-bootstrap";
 
 function Contact() {
   const [email, setEmail] = useState("");
@@ -44,12 +45,11 @@ function Contact() {
   }
 
   return (
-    <div>
-      Contact Information<br></br>
-      <a href="https://www.linkedin.com/in/jide-ogunbanjo/">LinkedIn</a>
-      <br></br>
-      <a href="https://www.github.com/jideogun">Github</a>
-      <form className="form" >
+    <Container>
+      Please reach out if you would like to connect and collaborate!<br></br>
+
+      <Col className="formClass">
+        <form className="form" >
         <input type="text" name="name" value={name} placeholder="Name" onChange={handleInputChange} onBlur={handleInputChange}/>
         <br></br>
         <input type="email" value={email} placeholder="Email" name="email" onChange={handleInputChange} onBlur={handleInputChange}/>
@@ -60,8 +60,10 @@ function Contact() {
           Submit
         </button>
       </form>
+      </Col>
+      
      {renderErrorMessage()}
-    </div>
+    </Container>
   );
 }
 

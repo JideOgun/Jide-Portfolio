@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import {  Container, Row, Col } from "react-bootstrap";
 function FilterTech(props) {
   const { techProj, setTechProjects, allTech, filteredTech } = props;
   const technologies = [
@@ -35,22 +35,27 @@ function FilterTech(props) {
   };
 
   return (
-    <div>
-      <div>Full Stack Projects - will filter according to technology</div>
+    <Container>
+    Full Stack Projects - will filter according to technology
+      <Row>
+
       {technologies.map((tech) => {
         return (
-          <label htmlFor={tech.id} key={tech.id}>
-            <span>{tech.name} </span>
-            <input
+            <Col xs={1} className="checkboxCol">
+              <label htmlFor={tech.id} key={tech.id}>
+            <span>{tech.name}{" "}<input
               type="checkbox"
               onClick={handleCheckbox}
               data-id={tech.id}
               name={tech.name}
-            ></input>
+            ></input></span>
+            
           </label>
+            </Col>  
         );
       })}
-    </div>
+      </Row>
+    </Container>
   );
 }
 
