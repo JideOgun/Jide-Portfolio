@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+Note
+ [Deployed Portfolio Link](https://jideogun.github.io/Jide-Portfolio/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Portfolio
+Creating a Portfolio showcasing the coding projects i've embarked on.
 
-## Available Scripts
+TekSess | JavaScript | Node.js | Handlebars.js | Express.js | Sass
+A social website where users can find valuable insights from previous employees about a company's culture, benefits, salaries and more. The user will be able to rate and review by leaving reviews on Companies.
 
-In the project directory, you can run:
+Professional ReadMe Generator Node.js | JavaScript | jQuery
+● ReadMe generator using Node.js that can be accessed through the Command Line Interface. It utilizes the Inquirer module which prompts users for input, and then putsthe inputsinto their respective sections. When the prompts are finished, a read.md file will be generated as a markdown.
 
-### `npm start`
+Music and Movies JavaScript | jQuery | HTML | Bulma | Github
+Web application designed to display and preview the latest music & movies by using the Spotify API and theMovieDB API. ● Displays and previewslatest box-office releases and movie trailers. ● Displays and previewsthe latest track and album releases. ● Localstorage is used to set and get data.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Weather-dashboard jQuery | JavaScript | Github | HTML5 | CSS
+A web application showing the weather forecast for cities entered into the search bar. ● Using the OpenWeather API top display the temperature, Humidity, Windspeed, and UV index. ● A 5 day forecast is also generated and displayed to the DOM with weather icons.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Work Day Scheduler jQuery | JavaScript | Github | HTML5 | CSS
+A calendar/daily planner web application designed using javascript, jQuery, HTML5 and CSS. ● Uses moment.jslibrary to display and save date and time. ● Color coded time-blocksshow when an event isin the past, present and future.
 
-### `npm test`
+RunBuddy website HTML | CSS | Github
+Fitness website displaying relevant businessinformation to customer’s end user. ● enables customersto capture user data using a form. ● Enables usersto sign up to be a member
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Code Quiz Challenge HTML | CSS | Github
+● A time code quiz challenge featuring dynamically generated elements ● Useslocalstorage to store high scores. ● Uses a timer to time challenge. Time gets deducted when a wrong answer isselected.
