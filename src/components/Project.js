@@ -61,7 +61,7 @@ function Projects() {
       technology: ["Javascript", "HTML", "CSS"],
       website: "https://jideogun.github.io/work-day-scheduler/",
       description:
-        "Progressive Web Application that enables users to post transactions even when there is no network connectivity",
+        "Work day scheduler that uses different colors to communicate past, present and future events to the user.",
     },
   ]);
 
