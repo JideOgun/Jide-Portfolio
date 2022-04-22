@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  /* align-content: center; */
+  align-items: center;
 }
 
 
@@ -137,22 +139,23 @@ button[type=button] {
   .projectCard {
     border: solid 10px black ;
     width: 24rem;
-    height: 35rem;
+    height: 25rem;
     margin: 10px;
+    
     
   }
 
   .backgroundcard {
     border: 1rem solid black;
     margin: 30px;
-    width: 10rem;
+    width: 23rem;
     
   }
 
   .aboutmecard {
     border: 1rem solid black;
     margin: 30px;
-    width: 10rem;
+    width: 23rem;
   }
 
   .checkboxCol {
@@ -161,11 +164,12 @@ button[type=button] {
 
   .barnav {
     background-color: salmon;
-    width: fit-content;
+    width: 30rem;
   }
 
   .footer {
     margin-top: 1rem;
+    margin-bottom: 1rem;
     padding: 0.5rem;
     background-color: salmon;
     position: fixed;
@@ -174,7 +178,7 @@ button[type=button] {
     width: 100%;
     color: white;
     font-size: x-large;
-    width: fit-content;
+    width: 30rem;
   }
 
   .footerLinkText {
