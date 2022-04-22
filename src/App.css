@@ -136,7 +136,7 @@ button[type=button] {
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .projectCard {
     border: solid 10px black ;
-    width: 10rem;
+    width: 27rem;
     height: 35rem;
     margin: 10px;
     
