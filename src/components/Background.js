@@ -3,7 +3,7 @@ import { Card, Container, Row, Col } from "react-bootstrap";
 
 function Background() {
   return (
-    <Container className="backgroundContainer" >
+    <Container className="backgroundContainer">
       <Row>
         <Col>
           <Card className="backgroundcard">
@@ -20,15 +20,18 @@ function Background() {
             </Card.Text>
             <Card.Body>
               Programming Languages: JSX, JavaScript (ES5/ES6), HTML5, CSS3,
-              jQuery, JSON, AJAX, XML <br></br>
-              Front-End: ReactJS, React-Router, React-Redux, React-Hooks,
-              Angular, BootStrap, Bulma, Sass <br></br>
-              Back-End:Node.js, Express, Axios, MySQL, MongoDB, Axios, RESTful
-              API, GraphQL, knexJS ORM, Sequelize ORM, Handlebars.js<br></br>
+              jQuery, JSON, AJAX, XML <br></br><br></br>
+              Front-End Skills: ReactJS, React-Router, React-Redux, React-Hooks,
+              Angular, BootStrap, Bulma, Sass <br></br><br></br>
+              Back-End Skills:Node.js, Express, Axios, MySQL, MongoDB, Axios,
+              RESTful API, GraphQL, Mongoose, knexJS ORM, Sequelize ORM,
+              Handlebars.js<br></br><br></br>
               Testing/Deployment: Mocha, Chai, Amazon AWS (EC2/ S3/ RDS), Jest,
-              Heroku, Azure, MERN <br></br>
-              Developer Tools: Git, NPM, Webpack, Babel, Postman, Chrome
-              DevTools, Agile Methodology, JIRA
+              Heroku, Azure, MERN <br></br><br></br>
+              Developer Tools: GitHub, NPM, Webpack, Babel, Postman, Chrome
+              DevTools, Agile Methodology, JIRA <br></br><br></br>
+              Controls Engineering Skills: RsLogix 5000, Sysmac Studio, TIA-Portal,
+              SolidWorks, , SEW MoviTools, FANUC RoboGuide.
             </Card.Body>
             <Card.Footer></Card.Footer>
           </Card>
@@ -38,7 +41,7 @@ function Background() {
         <button className="download">
           <a
             className="download"
-            href="../assets/resume/Jide_FS_ Resume_1.0.docx.pdf"
+            href="https://drive.google.com/file/d/124GifpH4IHq31UbhntGFkm5VRbB24UyO/view?usp=sharing"
             download
           >
             Download Resume
