@@ -6,22 +6,32 @@ import wdImg from "../assets/images/weather-dashboard.JPG";
 import cmsImg from "../assets/images/JidesCmsTechBlog.jpg";
 import btImg from "../assets/images/budgetTracker.jpg";
 import wdsImg from "../assets/images/workdayscheduler.gif";
+import hawker from "../assets/images/hawkerHomepage.jpg";
 import FilterTech from "./FilterTechnologies";
 
 function Projects() {
   const [techProjects, setTechProjects] = useState([
     {
-      name: "Teksess",
+      name: "Hawker",
       id: 1,
+      imgurl: hawker,
+      technology: ["Javascript", "HTML", "CSS", "GraphQL", "MongoDB", "Express"],
+      website: "https://texas-hawker.herokuapp.com/",
+      description:
+        "E-commerce website for that allows users to post items to sell and buy",
+    },
+    {
+      name: "Teksess",
+      id: 2,
       imgurl: teksessImg,
-      technology: ["Node.js", "Javascript", "Sequelize ORM", "MySQL"],
+      technology: ["Node.js", "Javascript", "Sequelize ORM", "MySQL", "Express"],
       website: "https://teksess.herokuapp.com/",
       description:
         "Professional social media website that enables users to leave ratings and post/edit/delete reviews on tech Companies",
     },
     {
       name: "Music-And-Movies",
-      id: 2,
+      id: 3,
       imgurl: mmImg,
       technology: ["Javascript", "HTML", "CSS", "RestAPI", "GitHub"],
       website: "https://jideogun.github.io/MusicAndMovies/index.html",
@@ -29,16 +39,16 @@ function Projects() {
     },
     {
       name: "Budget-Tracker",
-      id: 3,
+      id: 4,
       imgurl: btImg,
-      technology: ["Javascript", "Node.js", "MongoDB"],
+      technology: ["Javascript", "Node.js", "MongoDB", "Express"],
       website: "https://fathomless-ocean-98711.herokuapp.com/",
       description:
         "Progressive Web Application that enables users to post transactions even when there is no network connectivity",
     },
     {
       name: "Jides CMS Tech-Blog",
-      id: 4,
+      id: 5,
       imgurl: cmsImg,
       technology: ["Javascript", "Heroku", "MySQL", "Sequelize ORM", "Express"],
       website: "https://peaceful-stream-28816.herokuapp.com/",
@@ -47,7 +57,7 @@ function Projects() {
     },
     {
       name: "Weather-Dashboard",
-      id: 5,
+      id: 6,
       imgurl: wdImg,
       technology: ["Javascript", "jQuery", "HTML"],
       website: "https://jideogun.github.io/weather-dashboard/",
@@ -56,7 +66,7 @@ function Projects() {
     },
     {
       name: "Work-Day Scheduler",
-      id: 6,
+      id: 7,
       imgurl: wdsImg,
       technology: ["Javascript", "HTML", "CSS"],
       website: "https://jideogun.github.io/work-day-scheduler/",
