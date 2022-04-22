@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import backgroundImg from "../assets/images/IMG_0655.jpg";
-import Header from "./Header";
-import Footer from "./Footer";
+
 
 
 function Home() {

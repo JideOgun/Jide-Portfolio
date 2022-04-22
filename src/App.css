@@ -26,8 +26,8 @@
 
 .projectCard {
   border: solid 10px black ;
-  width: 25rem;
-  height: 25rem;
+  width: 35rem;
+  height: 35rem;
   margin: 10px;
   
 }
@@ -81,7 +81,6 @@ height: 100%;
 
 .checkboxCol {
   font-size: 10px;
-  
 }
 
 input[type=text] {
@@ -117,4 +116,73 @@ button[type=button] {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.emailText {
+  color: salmon;
+  text-decoration: none;
+}
+
+.githubRepo {
+  text-decoration: none;
+  color: salmon;
+}
+
+#linkText {
+  font-size: 2rem;
+  color: salmon;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .projectCard {
+    border: solid 10px black ;
+    width: 10rem;
+    height: 35rem;
+    margin: 10px;
+    
+  }
+
+  .backgroundcard {
+    border: 1rem solid black;
+    margin: 30px;
+    width: 10rem;
+    
+  }
+
+  .aboutmecard {
+    border: 1rem solid black;
+    margin: 30px;
+    width: 10rem;
+  }
+
+  .checkboxCol {
+    font-size: 5px;
+  }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 768px) {
+    .projectCard {
+    border: solid 10px black ;
+    width: 30rem;
+    height: 20rem;
+    margin: 10px;
+    
+  }
+
+  .backgroundcard {
+    border: 1rem solid black;
+    margin: 30px;
+    width: 30rem;
+    
+  }
+
+  .aboutmecard {
+    border: 1rem solid black;
+    margin: 30px;
+    width: 30rem;
+  }
+
+  .checkboxCol {
+    font-size: 2px;
+  }
 }

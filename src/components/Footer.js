@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBFooter, MDBContainer, MDBCol, MDBRow, MDBIcon } from 'mdb-react-ui-kit';
+import { MDBFooter, MDBContainer, MDBCol, MDBRow } from 'mdb-react-ui-kit';
 import {FaGithubSquare, FaLinkedin} from 'react-icons/fa'
 import {SiCodesandbox} from 'react-icons/si'
 
@@ -20,7 +20,7 @@ function Footer () {
           <div> <a className='links' href="https://codesandbox.io/u/jideogun"><SiCodesandbox/>codesandbox</a></div>
         </MDBCol>
         <MDBCol>
-          <div>&copy; {new Date().getFullYear()}</div>
+          <div>Jide Ogunbanjo &copy; {new Date().getFullYear()}</div>
           </MDBCol>
           
         </MDBRow>

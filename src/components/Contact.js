@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { validateEmail } from "../utils/helpers";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Col } from "react-bootstrap";
 
 function Contact() {
   const [email, setEmail] = useState("");
@@ -46,7 +46,12 @@ function Contact() {
 
   return (
     <Container>
-      Please reach out if you would like to connect and collaborate!<br></br>
+    <div>
+      Please reach out to <a className="emailText" href="mailto:jideogun93@gmail.com">Jideogun93@gmail.com</a> ! If you would like to connect and collaborate!<br></br>
+      Click the icons in the footer for my Linked, Github and codesandbox profiles
+    </div>
+      
+
 
       <Col className="formClass">
         <form className="form" >

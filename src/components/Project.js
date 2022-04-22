@@ -15,19 +15,34 @@ function Projects() {
       name: "Hawker",
       id: 1,
       imgurl: hawker,
-      technology: ["Javascript", "HTML", "CSS", "GraphQL", "MongoDB", "Express"],
+      technology: [
+        "Javascript",
+        "HTML",
+        "CSS",
+        "GraphQL",
+        "MongoDB",
+        "Express",
+      ],
       website: "https://texas-hawker.herokuapp.com/",
       description:
         "E-commerce website for that allows users to post items to sell and buy",
+      githubRepo: "https://github.com/JideOgun/Hawker",
     },
     {
       name: "Teksess",
       id: 2,
       imgurl: teksessImg,
-      technology: ["Node.js", "Javascript", "Sequelize ORM", "MySQL", "Express"],
+      technology: [
+        "Node.js",
+        "Javascript",
+        "Sequelize ORM",
+        "MySQL",
+        "Express",
+      ],
       website: "https://teksess.herokuapp.com/",
       description:
         "Professional social media website that enables users to leave ratings and post/edit/delete reviews on tech Companies",
+      githubRepo: "https://github.com/JideOgun/Assess",
     },
     {
       name: "Music-And-Movies",
@@ -36,6 +51,7 @@ function Projects() {
       technology: ["Javascript", "HTML", "CSS", "RestAPI", "GitHub"],
       website: "https://jideogun.github.io/MusicAndMovies/index.html",
       description: "Web app displaying music and movie information",
+      githubRepo: "https://github.com/JideOgun/MusicAndMovies",
     },
     {
       name: "Budget-Tracker",
@@ -45,6 +61,7 @@ function Projects() {
       website: "https://fathomless-ocean-98711.herokuapp.com/",
       description:
         "Progressive Web Application that enables users to post transactions even when there is no network connectivity",
+      githubRepo: "",
     },
     {
       name: "Jides CMS Tech-Blog",
@@ -54,6 +71,7 @@ function Projects() {
       website: "https://peaceful-stream-28816.herokuapp.com/",
       description:
         "Content management Blog-Site where developers(users) can publish/edit/delete blog posts and comment on other developers(users) posts as well.",
+      githubRepo: "https://github.com/JideOgun/Jides-CMS-Style-Blog-Site",
     },
     {
       name: "Weather-Dashboard",
@@ -63,6 +81,7 @@ function Projects() {
       website: "https://jideogun.github.io/weather-dashboard/",
       description:
         "A web application showing the weather forecast for cities entered into the search bar. ",
+      githubRepo: "https://github.com/JideOgun/weather-dashboard",
     },
     {
       name: "Work-Day Scheduler",
@@ -72,6 +91,7 @@ function Projects() {
       website: "https://jideogun.github.io/work-day-scheduler/",
       description:
         "Work day scheduler that uses different colors to communicate past, present and future events to the user.",
+      githubRepo: "https://github.com/JideOgun/work-day-scheduler",
     },
   ]);
 
@@ -87,13 +107,15 @@ function Projects() {
                 src={`${project.imgurl}`}
                 style={{ width: "100%", height: "60%" }}
               />
-              <Card.Link
-                className="imgurl stretched-link"
-                href={`${project.website}`}
-              >
-                {project.name}
-              </Card.Link>
+              <a id="linkText" className="imgurl" href={`${project.website}`}>
+                Click to see {project.name}
+              </a>
               <Card.Text>{`${project.technology}`}</Card.Text>
+              <Card.Text className="githubRepo">
+                <a className="githubRepo" href={project.githubRepo}>
+                  Github Repo
+                </a>
+              </Card.Text>
               <Card.Body className="description">
                 {project.description}
               </Card.Body>
@@ -110,13 +132,15 @@ function Projects() {
                 src={`${project.imgurl}`}
                 style={{ width: "100%", height: "60%" }}
               />
-              <Card.Link
-                className="imgurl stretched-link"
-                href={`${project.website}`}
-              >
+              <a id="linkText" className="imgurl" href={`${project.website}`}>
                 {project.name}
-              </Card.Link>
+              </a>
               <Card.Text>{project.technology}</Card.Text>
+              <Card.Text className="githubRepo">
+                <a className="githubRepo" href={project.githubRepo}>
+                  Click to view Github Repo
+                </a>
+              </Card.Text>
               <Card.Body className="description">
                 {project.description}
               </Card.Body>

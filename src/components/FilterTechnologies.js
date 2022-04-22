@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import {  Container, Row, Col } from "react-bootstrap";
 function FilterTech(props) {
-  const { techProj, setTechProjects, allTech, filteredTech } = props;
+  const { techProj, filteredTech } = props;
   const technologies = [
     { name: "Node.js", id: 1 },
     { name: "Sequelize ORM", id: 2 },
