@@ -5,7 +5,7 @@ import backgroundImg from "../assets/images/IMG_0655.jpg";
 
 function Home() {
   return (
-    <div
+    <div className="home"
       style={{
         backgroundImage: `url(${backgroundImg})`,
         backgroundPosition: "center",
