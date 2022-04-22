@@ -141,15 +141,12 @@ button[type=button] {
     width: 24rem;
     height: 25rem;
     margin: 10px;
-    
-    
   }
 
   .backgroundcard {
     border: 1rem solid black;
     margin: 30px;
-    width: 23rem;
-    
+    width: 30rem; 
   }
 
   .aboutmecard {
