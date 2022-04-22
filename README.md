@@ -1,6 +1,8 @@
 Note
  [Deployed Portfolio Link](https://jideogun.github.io/Jide-Portfolio/)
 
+ ![alt Project page](src\assets\images\portfoiloProjectpage.jpg)
+
 Portfolio
 Creating a Portfolio showcasing the coding projects i've embarked on.
 
