@@ -136,7 +136,7 @@ button[type=button] {
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .projectCard {
     border: solid 10px black ;
-    width: 27rem;
+    width: 24rem;
     height: 35rem;
     margin: 10px;
     
@@ -157,6 +157,24 @@ button[type=button] {
 
   .checkboxCol {
     font-size: 5px;
+  }
+
+  .barnav {
+    background-color: salmon;
+    width: fit-content;
+  }
+
+  .footer {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: salmon;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    font-size: x-large;
+    width: fit-content;
   }
 }
 
@@ -184,5 +202,24 @@ button[type=button] {
 
   .checkboxCol {
     font-size: 2px;
+  }
+
+  
+  .barnav {
+    background-color: salmon;
+    width: fit-content;
+  }
+
+  .footer {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: salmon;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    font-size: x-large;
+    width: fit-content;
   }
 }

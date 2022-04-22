@@ -17,7 +17,7 @@ function Footer () {
           <div> <a className='links' href="https://www.github.com/jideogun"> <FaGithubSquare/>Github</a></div>
         </MDBCol>
         <MDBCol>
-          <div> <a className='links' href="https://codesandbox.io/u/jideogun"><SiCodesandbox/>codesandbox</a></div>
+          <div> <a className='links' href="https://codesandbox.io/u/jideogun"><SiCodesandbox/>CSB</a></div>
         </MDBCol>
         <MDBCol>
           <div>Jide Ogunbanjo &copy; {new Date().getFullYear()}</div>
