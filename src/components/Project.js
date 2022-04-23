@@ -110,7 +110,7 @@ function Projects() {
               <a id="linkText" className="imgurl" href={`${project.website}`}>
                 Click to see {project.name}
               </a>
-              <Card.Text>{`${project.technology}`}</Card.Text>
+              <Card.Text className='technologies'>{`${project.technology}`}</Card.Text>
               <Card.Text className="githubRepo">
                 <a className="githubRepo" href={project.githubRepo}>
                   Github Repo
@@ -152,7 +152,7 @@ function Projects() {
   };
 
   return (
-    <div>
+    <div className='wrapper'>
       <FilterTech
         techProj={techProjects}
         setTechProjects={(proj) => setTechProjects(proj)}

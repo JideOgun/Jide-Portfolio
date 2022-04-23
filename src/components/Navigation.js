@@ -7,7 +7,7 @@ function Navigation({currentPage, handlePageChange}) {
 
   return (
         <Navbar className="barnav"  variant="dark">
-        <Container>
+        <Container className='main-container'>
           <Navbar.Brand href="#home" onClick={() => handlePageChange('Home')}>Jide Ogunbanjo</Navbar.Brand>
           <Nav>
             <Nav.Link href="#Projects" onClick={() => handlePageChange('Projects')}>Projects</Nav.Link>

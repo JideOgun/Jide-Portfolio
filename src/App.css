@@ -1,3 +1,8 @@
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
   /* align-content: center; */
@@ -9,9 +14,17 @@
   background-color: salmon;
 }
 
+.home {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 160vh;
+}
+
 .footer {
   margin-top: 1rem;
-  padding: 0.5rem;
+  padding-top: 0.5rem;
   background-color: salmon;
   position: fixed;
   bottom: 0;
@@ -28,8 +41,6 @@
 
 .projectCard {
   border: solid 10px black ;
-  width: 35rem;
-  height: 35rem;
   margin: 10px;
   
 }
@@ -53,14 +64,10 @@
 
 .aboutmecard {
   border: 1rem solid black;
-  margin: 30px;
-  width: 80rem;
 }
 
 .backgroundcard {
   border: 1rem solid black;
-  margin: 30px;
-  width: 80rem;
   
 }
 
@@ -73,7 +80,6 @@ height: 100%;
 .educationcard {
   border: 1rem solid black;
   margin: 30px;
-  width: 80rem;
 }
 
 .links {
@@ -135,42 +141,86 @@ button[type=button] {
   color: salmon;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 260px) and (max-device-width: 768px) {
   .projectCard {
     border: solid 10px black ;
-    width: 24rem;
-    height: 25rem;
     margin: 10px;
+  }
+
+  .description {
+    padding-bottom: .5rem;
+  }
+
+  .main-container {
+    padding: .5rem
+  }
+
+  .main-container > a {
+    color: white;
+    font-size: x-large;
+    text-decoration: none;
+  }
+
+  .navbar-nav > a {
+    color:  lightgray;
+    font-size: large;
+    text-decoration: none;
+    padding: 0 .3rem;
+  }
+
+  .container {
+    width: 100%;
     
-    
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .checkboxCol {
+    font-size: 1rem;
+  }
+
+  .wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 2.5rem;
+  }
+
+  .home {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
   }
 
   .backgroundcard {
     border: 1rem solid black;
-    margin: 30px;
-    width: 23rem;
     
   }
 
+  
+
   .aboutmecard {
     border: 1rem solid black;
-    margin: 30px;
-    width: 23rem;
-  }
-
-  .checkboxCol {
-    font-size: 5px;
+    width: 100%;
   }
 
   .barnav {
     background-color: salmon;
-    width: 30rem;
+    width: 100%;
   }
 
   .footer {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding: 0.5rem;
     background-color: salmon;
     position: fixed;
     bottom: 0;
@@ -178,7 +228,14 @@ button[type=button] {
     width: 100%;
     color: white;
     font-size: x-large;
-    width: 30rem;
+  }
+
+  .footLinks {
+    display: flex;
+  }
+
+  .links {
+    padding: 0 1rem;
   }
 
   .footerLinkText {
@@ -186,48 +243,26 @@ button[type=button] {
   }
 }
 
-@media only screen and (min-device-width: 480px) and (max-device-width: 768px) {
-    .projectCard {
-    border: solid 10px black ;
-    width: 30rem;
-    height: 20rem;
-    margin: 10px;
-    
-  }
+.formClass {
+  padding: 1rem;
+}
 
-  .backgroundcard {
-    border: 1rem solid black;
-    margin: 30px;
-    width: 30rem;
-    
-  }
-
-  .aboutmecard {
-    border: 1rem solid black;
-    margin: 30px;
-    width: 30rem;
-  }
-
-  .checkboxCol {
-    font-size: 2px;
-  }
-
-  
-  .barnav {
-    background-color: salmon;
-    width: fit-content;
-  }
-
-  .footer {
-    margin-top: 1rem;
-    padding: 0.5rem;
-    background-color: salmon;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+@media only screen and (min-device-width: 768px) {
+  .main-container > a {
     color: white;
     font-size: x-large;
-    width: fit-content;
+    text-decoration: none;
+  }
+
+  .navbar-nav > a {
+    color:  lightgray;
+    font-size: large;
+    text-decoration: none;
+    padding: 0 .3rem;
+  }
+
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
