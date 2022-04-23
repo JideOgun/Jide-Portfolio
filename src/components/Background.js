@@ -41,7 +41,7 @@ function Background() {
         <button className="download">
           <a
             className="download"
-            href="https://drive.google.com/file/d/124GifpH4IHq31UbhntGFkm5VRbB24UyO/view?usp=sharing"
+            href="https://docs.google.com/document/d/1qxyZdTbd1MO_c8HZvmeWreKj_QJRbwV4/edit?usp=sharing&ouid=105935983987300990558&rtpof=true&sd=true"
             download
           >
             Download Resume
