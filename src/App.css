@@ -9,7 +9,6 @@
   align-items: center;
 }
 
-
 .barnav {
   background-color: salmon;
 }
@@ -40,9 +39,8 @@
 }
 
 .projectCard {
-  border: solid 10px black ;
+  border: solid 1px black;
   margin: 10px;
-  
 }
 
 .download {
@@ -63,22 +61,38 @@
 }
 
 .aboutmecard {
-  border: 1rem solid black;
+  border: 1px solid black;
+  width: 80%;
+  margin-bottom: 4rem;
 }
 
-.backgroundcard {
-  border: 1rem solid black;
+.card-footer {
+  border-top: 1px solid black;
+  background-color: antiquewhite;
+}
+
+.card-body {
+  display: flex;
   
 }
 
-.backgroundContainer{
+.card-img {
+  width: 20%;
+  height: 20%;
+}
+
+.backgroundcard {
+  border: 1px solid black;
+}
+
+.backgroundContainer {
   /* border: solid 1px black; */
-height: 100%;
-/* background-color: red; */
+  height: 100%;
+  /* background-color: red; */
 }
 
 .educationcard {
-  border: 1rem solid black;
+  border: 1px solid black;
   margin: 30px;
 }
 
@@ -91,7 +105,15 @@ height: 100%;
   font-size: 10px;
 }
 
-input[type=text] {
+.nav-link {
+  color: lightgrey;
+}
+
+.active {
+  color: white;
+}
+
+input[type='text'] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -99,7 +121,7 @@ input[type=text] {
   border-radius: 10px;
 }
 
-input[type=email] {
+input[type='email'] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -107,7 +129,7 @@ input[type=email] {
   border-radius: 10px;
 }
 
-textarea[type=text] {
+textarea[type='text'] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -115,7 +137,7 @@ textarea[type=text] {
   border-radius: 10px;
 }
 
-button[type=button] {
+button[type='button'] {
   width: 100%;
   background-color: salmon;
   color: white;
@@ -141,18 +163,18 @@ button[type=button] {
   color: salmon;
 }
 
-@media only screen and (min-device-width: 260px) and (max-device-width: 768px) {
+@media only screen and (min-device-width: 260px) and (max-device-width: 767px) {
   .projectCard {
-    border: solid 10px black ;
+    border: solid 1px black;
     margin: 10px;
   }
 
   .description {
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
   }
 
   .main-container {
-    padding: .5rem
+    padding: 0.5rem;
   }
 
   .main-container > a {
@@ -162,19 +184,21 @@ button[type=button] {
   }
 
   .navbar-nav > a {
-    color:  lightgray;
     font-size: large;
     text-decoration: none;
-    padding: 0 .3rem;
+    padding: 0 0.3rem;
   }
 
   .container {
     width: 100%;
-    
   }
 
   .col {
-    width: 100%;
+    width: 90%;
+  }
+
+  .card-img {
+    width: 50%;
   }
 
   .row {
@@ -204,15 +228,19 @@ button[type=button] {
   }
 
   .backgroundcard {
-    border: 1rem solid black;
-    
+    border: 1px solid black;
+    width: 90%;
+    margin-bottom: 4rem;
   }
 
-  
-
   .aboutmecard {
-    border: 1rem solid black;
-    width: 100%;
+    border: 1px solid black;
+    width: 90%;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
   }
 
   .barnav {
@@ -241,10 +269,10 @@ button[type=button] {
   .footerLinkText {
     display: none;
   }
-}
 
-.formClass {
-  padding: 1rem;
+  .formClass {
+    padding: 1rem;
+  }
 }
 
 @media only screen and (min-device-width: 768px) {
@@ -255,14 +283,68 @@ button[type=button] {
   }
 
   .navbar-nav > a {
-    color:  lightgray;
     font-size: large;
     text-decoration: none;
-    padding: 0 .3rem;
+    padding: 0 0.3rem;
   }
 
   .main-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .col {
+    width: 50%;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footLinks {
+    display: flex;
+  }
+
+  .links {
+    padding: 0 1rem;
+  }
+
+  .footerLinkText {
+    display: none;
+  }
+  .backgroundcard {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-device-width: 1150px) {
+  .col {
+    width: 33%;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footLinks {
+    display: flex;
+  }
+
+  .links {
+    padding: 0 1rem;
+  }
+
+  .footerLinkText {
+    display: none;
+  }
+
+  .backgroundcard {
+    width: 80%;
   }
 }

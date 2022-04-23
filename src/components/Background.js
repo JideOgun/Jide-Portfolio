@@ -5,7 +5,7 @@ function Background() {
   return (
     <Container className="backgroundContainer">
       <Row>
-        <Col>
+        
           <Card className="backgroundcard">
             <Card.Title>
               Bachelor of Science in Mechanical Engineering from the University
@@ -35,7 +35,7 @@ function Background() {
             </Card.Body>
             <Card.Footer></Card.Footer>
           </Card>
-        </Col>
+        
       </Row>
       <div>
         <button className="download">

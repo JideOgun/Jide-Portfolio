@@ -6,7 +6,6 @@ function AboutMe() {
   return (
     <Container>
     <Row>
-    <Col>
     <Card className="aboutmecard">
     <Card.Title>
       Full Stack Web Developer with experience in coding and electronics.
@@ -15,7 +14,7 @@ function AboutMe() {
     <Card.Text>
     </Card.Text>
     <Card.Body>
-    <Card.Img src={`${img}`} style={{ width: "20%", height: "20%" }} className="float-start"/>
+    <Card.Img src={`${img}`} className="float-start"/>
       Certificate from the UT Austin coding bootcamp and a Mechanical
       Engineering degree from the University of Texas at San Antonio. Full stack
       technologies include HTML, CSS, JavaScript, Node.js, while electronics
@@ -40,7 +39,6 @@ function AboutMe() {
       and products that will achieve maximum customer satisfaction.
     </Card.Footer>
     </Card>
-    </Col>
     </Row>
     </Container>
   );
