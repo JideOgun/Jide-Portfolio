@@ -17,11 +17,11 @@ function Projects() {
       imgurl: hawker,
       technology: [
         "Javascript",
-        "HTML",
-        "CSS",
-        "GraphQL",
-        "MongoDB",
-        "Express",
+        " HTML",
+        " CSS",
+        " GraphQL",
+        " MongoDB",
+        " Express",
       ],
       website: "https://texas-hawker.herokuapp.com/",
       description:
@@ -34,10 +34,10 @@ function Projects() {
       imgurl: teksessImg,
       technology: [
         "Node.js",
-        "Javascript",
-        "Sequelize ORM",
-        "MySQL",
-        "Express",
+        " Javascript",
+        " Sequelize ORM",
+        " MySQL",
+        " Express",
       ],
       website: "https://teksess.herokuapp.com/",
       description:
@@ -48,7 +48,7 @@ function Projects() {
       name: "Music-And-Movies",
       id: 3,
       imgurl: mmImg,
-      technology: ["Javascript", "HTML", "CSS", "RestAPI", "GitHub"],
+      technology: ["Javascript", " HTML", " CSS", " RestAPI", " GitHub"],
       website: "https://jideogun.github.io/MusicAndMovies/index.html",
       description: "Web app displaying music and movie information",
       githubRepo: "https://github.com/JideOgun/MusicAndMovies",
@@ -57,7 +57,7 @@ function Projects() {
       name: "Budget-Tracker",
       id: 4,
       imgurl: btImg,
-      technology: ["Javascript", "Node.js", "MongoDB", "Express"],
+      technology: ["Javascript", " Node.js", " MongoDB", " Express"],
       website: "https://fathomless-ocean-98711.herokuapp.com/",
       description:
         "Progressive Web Application that enables users to post transactions even when there is no network connectivity",
@@ -67,7 +67,7 @@ function Projects() {
       name: "Jides CMS Tech-Blog",
       id: 5,
       imgurl: cmsImg,
-      technology: ["Javascript", "Heroku", "MySQL", "Sequelize ORM", "Express"],
+      technology: ["Javascript", " Heroku", " MySQL", " Sequelize ORM", " Express"],
       website: "https://peaceful-stream-28816.herokuapp.com/",
       description:
         "Content management Blog-Site where developers(users) can publish/edit/delete blog posts and comment on other developers(users) posts as well.",
@@ -77,7 +77,7 @@ function Projects() {
       name: "Weather-Dashboard",
       id: 6,
       imgurl: wdImg,
-      technology: ["Javascript", "jQuery", "HTML"],
+      technology: ["Javascript", " jQuery", " HTML"],
       website: "https://jideogun.github.io/weather-dashboard/",
       description:
         "A web application showing the weather forecast for cities entered into the search bar. ",
@@ -87,7 +87,7 @@ function Projects() {
       name: "Work-Day Scheduler",
       id: 7,
       imgurl: wdsImg,
-      technology: ["Javascript", "HTML", "CSS"],
+      technology: ["Javascript", " HTML", " CSS"],
       website: "https://jideogun.github.io/work-day-scheduler/",
       description:
         "Work day scheduler that uses different colors to communicate past, present and future events to the user.",
@@ -105,12 +105,12 @@ function Projects() {
             <Card className="projectCard">
               <Card.Img
                 src={`${project.imgurl}`}
-                style={{ width: "100%", height: "60%" }}
               />
+              <div className='cardText'>
               <a id="linkText" className="imgurl" href={`${project.website}`}>
                 Click to see {project.name}
               </a>
-              <Card.Text>{`${project.technology}`}</Card.Text>
+              <Card.Text className='technologies'>{`${project.technology}`}</Card.Text>
               <Card.Text className="githubRepo">
                 <a className="githubRepo" href={project.githubRepo}>
                   Github Repo
@@ -119,6 +119,7 @@ function Projects() {
               <Card.Body className="description">
                 {project.description}
               </Card.Body>
+              </div>
             </Card>
           </Col>
         );
@@ -130,11 +131,11 @@ function Projects() {
             <Card className="projectCard">
               <Card.Img
                 src={`${project.imgurl}`}
-                style={{ width: "100%", height: "60%" }}
               />
               <a id="linkText" className="imgurl" href={`${project.website}`}>
                 {project.name}
               </a>
+              <div className='cardText'>
               <Card.Text>{project.technology}</Card.Text>
               <Card.Text className="githubRepo">
                 <a className="githubRepo" href={project.githubRepo}>
@@ -144,6 +145,7 @@ function Projects() {
               <Card.Body className="description">
                 {project.description}
               </Card.Body>
+              </div>  
             </Card>
           </Col>
         );
@@ -152,7 +154,7 @@ function Projects() {
   };
 
   return (
-    <div>
+    <div className='wrapper'>
       <FilterTech
         techProj={techProjects}
         setTechProjects={(proj) => setTechProjects(proj)}

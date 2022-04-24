@@ -1,49 +1,109 @@
-.App {
-  text-align: center;
-  /* align-content: center; */
-  align-items: center;
+/* Main */
+
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
+
+.App {
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.home {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 160vh;
+}
+
+/* Header */
 
 .barnav {
   background-color: salmon;
 }
 
-.footer {
-  margin-top: 1rem;
-  padding: 0.5rem;
-  background-color: salmon;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+.header-container {
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container > a {
+  text-decoration: none;
   color: white;
+}
+
+.navbar-brand {
   font-size: x-large;
 }
 
-.img {
-  height: 20%;
-  width: 80%;
+.nav-link {
+  color: lightgrey;
+  padding: 0 1rem;
+}
+
+.active {
+  color: white;
+}
+
+/* Project Page */
+
+.checkboxCol {
+  font-size: 10px;
+  padding: .5rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.container {
+  margin-bottom: 2.5rem;
+}
+
+.col {
+  width: 33%;
+  margin: 10px 0;
 }
 
 .projectCard {
-  border: solid 10px black ;
-  width: 35rem;
-  height: 35rem;
-  margin: 10px;
-  
-}
-
-.download {
-  text-decoration: none;
-  color: salmon;
-  font-size: medium;
+  border: solid 1px lightgray;
+  height: 90%;
   border-radius: 20px;
-  align-items: center;
+  overflow: hidden;
+  
 }
 
 .description {
   font-size: x-small;
+}
+
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-img {
+  width: 100%;
+  height: 50%;
+}
+
+.cardText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .imgurl {
@@ -51,66 +111,89 @@
   color: black;
 }
 
-.aboutmecard {
-  border: 1rem solid black;
-  margin: 30px;
-  width: 80rem;
+.card-footer {
+  border-top: 1px solid black;
+  background-color: antiquewhite;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
+
+
+/* Resume */
+
+.download {
+  text-decoration: none;
+  color: salmon;
+  font-size: medium;
+  border-radius: 20px;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+/* About Me */
+
+.aboutmecard {
+  border: 1px solid black;
+  width: 80%;
+  margin: 2rem 0 4rem 0;
+  border-radius: 20px;
+}
+
+.about-card{
+  display: flex;
+}
+
+.about-img {
+  width: 30%;
+}
+
+/* Background */
 
 .backgroundcard {
-  border: 1rem solid black;
-  margin: 30px;
-  width: 80rem;
-  
+  border: 1px solid black;
+  border-radius: 20px;
 }
 
-.backgroundContainer{
-  /* border: solid 1px black; */
-height: 100%;
-/* background-color: red; */
+.backgroundContainer {
+  height: 100%;
+  margin: 2rem;
 }
 
-.educationcard {
-  border: 1rem solid black;
-  margin: 30px;
-  width: 80rem;
+/* Contact */
+
+.form-wrapper {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.links {
-  text-decoration: none;
-  color: white;
-}
-
-.checkboxCol {
-  font-size: 10px;
-}
-
-input[type=text] {
-  width: 100%;
+input[type='text'] {
+  width: 80%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
   border-radius: 10px;
 }
 
-input[type=email] {
-  width: 100%;
+input[type='email'] {
+  width: 80%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
   border-radius: 10px;
 }
 
-textarea[type=text] {
-  width: 100%;
+textarea[type='text'] {
+  width: 80%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
   border-radius: 10px;
 }
 
-button[type=button] {
-  width: 100%;
+button[type='button'] {
+  width: 30%;
   background-color: salmon;
   color: white;
   padding: 14px 20px;
@@ -135,99 +218,68 @@ button[type=button] {
   color: salmon;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  .projectCard {
-    border: solid 10px black ;
-    width: 24rem;
-    height: 25rem;
-    margin: 10px;
-    
-    
-  }
+/* Footer */
 
-  .backgroundcard {
-    border: 1rem solid black;
-    margin: 30px;
-    width: 23rem;
-    
-  }
+.footer {
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  background-color: salmon;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  font-size: x-large;
+}
 
-  .aboutmecard {
-    border: 1rem solid black;
-    margin: 30px;
-    width: 23rem;
-  }
+.links {
+  text-decoration: none;
+  color: white;
+  padding: .5rem;
+}
 
-  .checkboxCol {
-    font-size: 5px;
-  }
+.footLinks {
+  display: flex;
+  flex-direction: row;
+  padding: 0 1rem;
+}
 
-  .barnav {
-    background-color: salmon;
-    width: 30rem;
+@media only screen and (min-width: 768px) and (max-width: 1050px) {
+  .col {
+    width: 45%;
   }
-
-  .footer {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    background-color: salmon;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    color: white;
-    font-size: x-large;
-    width: 30rem;
-  }
-
-  .footerLinkText {
-    display: none;
+  
+  .about-img {
+    width: 50%;
+    height: 50%;
   }
 }
 
-@media only screen and (min-device-width: 480px) and (max-device-width: 768px) {
-    .projectCard {
-    border: solid 10px black ;
-    width: 30rem;
-    height: 20rem;
-    margin: 10px;
-    
-  }
-
-  .backgroundcard {
-    border: 1rem solid black;
-    margin: 30px;
-    width: 30rem;
-    
-  }
-
-  .aboutmecard {
-    border: 1rem solid black;
-    margin: 30px;
-    width: 30rem;
-  }
-
-  .checkboxCol {
-    font-size: 2px;
-  }
-
+@media only screen and (min-width: 260px) and (max-width: 767px) {
   
-  .barnav {
-    background-color: salmon;
-    width: fit-content;
+  .col {
+    width: 90%;
+  }
+
+  .row {
+    margin-bottom: 3rem;
   }
 
   .footer {
-    margin-top: 1rem;
-    padding: 0.5rem;
-    background-color: salmon;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    color: white;
-    font-size: x-large;
-    width: fit-content;
+    flex-direction: column;
+  }
+
+  .header-container {
+    flex-direction: column;
+  }
+
+  .about-card {
+    flex-direction: column;
+  }
+
+  .about-img {
+    width: 50%;
   }
 }

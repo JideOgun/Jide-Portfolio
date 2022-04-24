@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { Container, Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 
 function Navigation({currentPage, handlePageChange}) {
   console.log(currentPage)
@@ -7,7 +7,7 @@ function Navigation({currentPage, handlePageChange}) {
 
   return (
         <Navbar className="barnav"  variant="dark">
-        <Container>
+        <div className='header-container'>
           <Navbar.Brand href="#home" onClick={() => handlePageChange('Home')}>Jide Ogunbanjo</Navbar.Brand>
           <Nav>
             <Nav.Link href="#Projects" onClick={() => handlePageChange('Projects')}>Projects</Nav.Link>
@@ -15,7 +15,7 @@ function Navigation({currentPage, handlePageChange}) {
             <Nav.Link href="#About-me" onClick={() => handlePageChange('AboutMe')}>About me</Nav.Link>
             <Nav.Link href="#Contact" onClick={() => handlePageChange('Contact')}>Contact</Nav.Link>
           </Nav>
-        </Container>
+        </div>
       </Navbar> 
   );
 }
