@@ -1,14 +1,18 @@
+/* Main */
+
 * {
   margin: 0 auto;
   box-sizing: border-box;
 }
 
+
 .App {
   text-align: center;
 }
 
-.barnav {
-  background-color: salmon;
+.wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .home {
@@ -19,36 +23,80 @@
   height: 160vh;
 }
 
-.footer {
-  margin-top: 1rem;
-  padding-top: 0.5rem;
+/* Header */
+
+.barnav {
   background-color: salmon;
-  position: fixed;
+}
+
+.header-container {
+  height: 6rem;
   display: flex;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container > a {
+  text-decoration: none;
   color: white;
+}
+
+.navbar-brand {
   font-size: x-large;
+}
+
+.nav-link {
+  color: lightgrey;
+  padding: 0 1rem;
+}
+
+.active {
+  color: white;
+}
+
+/* Project Page */
+
+.checkboxCol {
+  font-size: 10px;
+  padding: .5rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.container {
+  margin-bottom: 2.5rem;
+}
+
+.col {
+  width: 33%;
+  margin: 10px 0;
 }
 
 .projectCard {
   border: solid 1px lightgray;
-  margin: 10px;
-  height: 100%;
-  
-}
-
-.download {
-  text-decoration: none;
-  color: salmon;
-  font-size: medium;
+  height: 90%;
   border-radius: 20px;
-  align-items: center;
+  overflow: hidden;
+  
 }
 
 .description {
   font-size: x-small;
+}
+
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-img {
+  width: 100%;
+  height: 50%;
 }
 
 .cardText {
@@ -58,22 +106,9 @@
   flex-direction: column;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
 .imgurl {
   text-decoration: none;
   color: black;
-}
-
-.aboutmecard {
-  border: 1px solid black;
-  width: 80%;
-  margin-bottom: 4rem;
 }
 
 .card-footer {
@@ -83,15 +118,36 @@
   border-bottom-right-radius: 20px;
 }
 
-.card-body {
+
+/* Resume */
+
+.download {
+  text-decoration: none;
+  color: salmon;
+  font-size: medium;
+  border-radius: 20px;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+/* About Me */
+
+.aboutmecard {
+  border: 1px solid black;
+  width: 80%;
+  margin: 2rem 0 4rem 0;
+  border-radius: 20px;
+}
+
+.about-card{
   display: flex;
 }
 
-.card-img {
-  width: 100%;
-  height: 60%;
+.about-img {
+  width: 30%;
 }
 
+/* Background */
 
 .backgroundcard {
   border: 1px solid black;
@@ -99,42 +155,21 @@
 }
 
 .backgroundContainer {
-  /* border: solid 1px black; */
   height: 100%;
-  /* background-color: red; */
+  margin: 2rem;
 }
 
-.educationcard {
-  border: 1px solid black;
-  margin: 30px;
-}
+/* Contact */
 
-.links {
-  text-decoration: none;
-  color: white;
-}
-
-.checkboxCol {
-  font-size: 10px;
-}
-
-.main-container {
-  height: 6rem;
-  justify-content: center;
+.form-wrapper {
+  display: flex;
+  justify-self: center;
   align-items: center;
-}
-
-
-.nav-link {
-  color: lightgrey;
-}
-
-.active {
-  color: white;
+  flex-direction: column;
 }
 
 input[type='text'] {
-  width: 100%;
+  width: 80%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
@@ -142,7 +177,7 @@ input[type='text'] {
 }
 
 input[type='email'] {
-  width: 100%;
+  width: 80%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
@@ -150,7 +185,7 @@ input[type='email'] {
 }
 
 textarea[type='text'] {
-  width: 100%;
+  width: 80%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
@@ -158,7 +193,7 @@ textarea[type='text'] {
 }
 
 button[type='button'] {
-  width: 100%;
+  width: 30%;
   background-color: salmon;
   color: white;
   padding: 14px 20px;
@@ -183,295 +218,68 @@ button[type='button'] {
   color: salmon;
 }
 
-@media only screen and (min-device-width: 260px) and (max-device-width: 767px) {
-  .projectCard {
-    border: solid 1px black;
-    margin: 10px;
-    border-radius: 20px;
-  }
+/* Footer */
 
-  .description {
-    padding-bottom: 0.5rem;
-  }
+.footer {
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  background-color: salmon;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  font-size: x-large;
+}
 
-  .main-container {
-    padding: 0.5rem;
-  }
+.links {
+  text-decoration: none;
+  color: white;
+  padding: .5rem;
+}
 
-  .main-container > a {
-    color: white;
-    font-size: x-large;
-    text-decoration: none;
-  }
+.footLinks {
+  display: flex;
+  flex-direction: row;
+  padding: 0 1rem;
+}
 
-  .navbar-nav > a {
-    font-size: large;
-    text-decoration: none;
-    padding: 0 0.3rem;
+@media only screen and (min-width: 768px) and (max-width: 1050px) {
+  .col {
+    width: 45%;
   }
+  
+  .about-img {
+    width: 50%;
+    height: 50%;
+  }
+}
 
+@media only screen and (min-width: 260px) and (max-width: 767px) {
+  
   .col {
     width: 90%;
   }
 
-  .card-img {
-    width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-  }
-
   .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
-  }
-
-  .checkboxCol {
-    font-size: 1rem;
-  }
-
-  .home {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
-  }
-
-  .backgroundcard {
-    border: 1px solid black;
-    width: 90%;
-    margin-bottom: 4rem;
-  }
-
-  .backgroundContainer {
-    margin-bottom: 4rem;
-  }
-
-  .aboutmecard {
-    border: 1px solid black;
-    width: 90%;
-    border-radius: 20px;
-  }
-
-  .card-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .about-img {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .barnav {
-    background-color: salmon;
-    width: 100%;
+    margin-bottom: 3rem;
   }
 
   .footer {
-    background-color: salmon;
-    position: fixed;
     flex-direction: column;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    color: white;
-    font-size: x-large;
   }
 
-  .footLinks {
-    display: flex;
+  .header-container {
+    flex-direction: column;
   }
 
-  .links {
-    padding: 0 1rem;
+  .about-card {
+    flex-direction: column;
   }
 
-  .footerLinkText {
-    display: none;
-  }
-
-  .formClass {
-    padding: 1rem;
-  }
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1149px) {
-  .main-container > a {
-    color: white;
-    font-size: x-large;
-    text-decoration: none;
-  }
-
-  .navbar-nav > a {
-    font-size: large;
-    text-decoration: none;
-    padding: 0 0.3rem;
-  }
-
-  .main-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .col {
+  .about-img {
     width: 50%;
-    height: 25rem;
-    margin-bottom: 3rem;
-  }
-
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
-  }
-
-  .projectCard {
-    border-radius: 20px;
-  }
-
-  .aboutmecard {
-    border-radius: 20px;
-  }
-
-  .backgroundcard {
-    border: 1px solid black;
-    width: 90%;
-    /* margin-bottom: 4rem; */
-  }
-
-  .card-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
-  }
-
-  .about-card {
-    display: flex;
-    flex-direction: column;
-    
-  }
-
-  .card-img {
-    width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-  }
-
-  .cardText {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-  }
-
-  .about-img {
-    width: 30%;
-  }
-
-  
-
-  .footLinks {
-    display: flex;
-  }
-
-  .links {
-    padding: 0 1rem;
-  }
-
-  .footerLinkText {
-    display: none;
-  }
-  .backgroundcard {
-    width: 90%;
-  }
-}
-
-@media only screen and (min-device-width: 1150px) {
-  .main-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .main-container > a {
-    color: white;
-    font-size: x-large;
-    text-decoration: none;
-  }
-  
-  .navbar-nav > a {
-    font-size: large;
-    text-decoration: none;
-    padding: 0 0.3rem;
-  }
-
-  .col {
-    width: 33%;
-    height: 30rem;
-    margin-bottom: 3rem;
-  }
-
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
-  }
-
-  .card-body {
-    display: flex;
-    justify-content: center;
-  }
-
-  .card-img {
-    width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-  }
-
-  .projectCard {
-    border-radius: 20px;
-  }
-
-  .about-img {
-    width: 30%;
-  }
-
-  .about-card {
-    display: flex;
-  }
-
-  .aboutmecard {
-    border-radius: 20px;
-  }
-
-  .footLinks {
-    display: flex;
-  }
-
-  .links {
-    padding: 0 1rem;
-  }
-
-  .footerLinkText {
-    display: none;
-  }
-
-  .backgroundcard {
-    width: 80%;
   }
 }

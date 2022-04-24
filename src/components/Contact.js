@@ -45,7 +45,7 @@ function Contact() {
   }
 
   return (
-    <Container>
+    <Container className='form-wrapper'>
     <div>
       Please reach out to <a className="emailText" href="mailto:jideogun93@gmail.com">Jideogun93@gmail.com</a> ! If you would like to connect and collaborate!<br></br>
       Click the icons in the footer for my Linked, Github and codesandbox profiles
