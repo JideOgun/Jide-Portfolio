@@ -34,7 +34,7 @@ function Header() {
     
 
     return ( 
-        <div className='wrapper'>
+        <div>
            <Navigation currentPage={currentPage} handlePageChange={handlePageChange} /> 
            {handleRender()}
         </div>

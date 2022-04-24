@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Container, Row, Col } from "react-bootstrap";
+import { Card, Container, Row } from "react-bootstrap";
 import img from '../assets/images/jide-screenshot.jpg'
 
 function AboutMe() {
@@ -13,8 +13,8 @@ function AboutMe() {
     
     <Card.Text>
     </Card.Text>
-    <Card.Body>
-    <Card.Img src={`${img}`} className="float-start"/>
+    <div className='about-card'>
+    <img src={`${img}`} alt="Jide" className="about-img"/>
       Certificate from the UT Austin coding bootcamp and a Mechanical
       Engineering degree from the University of Texas at San Antonio. Full stack
       technologies include HTML, CSS, JavaScript, Node.js, while electronics
@@ -31,7 +31,7 @@ function AboutMe() {
       I’m also passionate about soccer, and my community. Community involvements include volunteering on
       saturday mornings to coach children to develop their skills, team play,
       learn the basics of soccer, socializing and having fun. 
-    </Card.Body>
+    </div>
     <Card.Footer>
       I’m excited for
       the opportunity to apply my skills in a fast paced, collaborative
