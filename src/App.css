@@ -45,9 +45,20 @@
   font-size: x-large;
 }
 
+.navText {
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+#navBrandText {
+  font-size: 3rem;
+  text-decoration: none;
+}
+
 .nav-link {
   color: lightgrey;
   padding: 0 1rem;
+  text-decoration: none;
 }
 
 .active {
@@ -79,7 +90,8 @@
 .projectCard {
   border: solid 1px lightgray;
   height: 90%;
-  border-radius: 20px;
+  width: 65%;
+  border-radius: 15px;
   overflow: hidden;
   
 }
@@ -208,7 +220,7 @@ button[type='button'] {
   text-decoration: none;
 }
 
-.githubRepo {
+.GitHubRepo {
   text-decoration: none;
   color: salmon;
 }

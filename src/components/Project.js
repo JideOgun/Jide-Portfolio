@@ -16,17 +16,18 @@ function Projects() {
       id: 1,
       imgurl: hawker,
       technology: [
-        "Javascript",
+        "JavaScript",
         " HTML",
         " CSS",
         " GraphQL",
         " MongoDB",
         " Express",
+        "GraphQL"
       ],
       website: "https://texas-hawker.herokuapp.com/",
       description:
-        "E-commerce website for that allows users to post items to sell and buy",
-      githubRepo: "https://github.com/JideOgun/Hawker",
+        "E-commerce website that allows users to post items to sell and buy using Stripe as a payment method.",
+      GitHubRepo: "https://GitHub.com/JideOgun/Hawker",
     },
     {
       name: "Teksess",
@@ -34,64 +35,64 @@ function Projects() {
       imgurl: teksessImg,
       technology: [
         "Node.js",
-        " Javascript",
-        " Sequelize ORM",
+        " JavaScript",
+        " Sequelize",
         " MySQL",
         " Express",
       ],
       website: "https://teksess.herokuapp.com/",
       description:
         "Professional social media website that enables users to leave ratings and post/edit/delete reviews on tech Companies",
-      githubRepo: "https://github.com/JideOgun/Assess",
+      GitHubRepo: "https://GitHub.com/JideOgun/Assess",
     },
     {
       name: "Music-And-Movies",
       id: 3,
       imgurl: mmImg,
-      technology: ["Javascript", " HTML", " CSS", " RestAPI", " GitHub"],
-      website: "https://jideogun.github.io/MusicAndMovies/index.html",
+      technology: ["JavaScript", " HTML", " CSS", " RestAPI", " GitHub"],
+      website: "https://jideogun.GitHub.io/MusicAndMovies/index.html",
       description: "Web app displaying music and movie information",
-      githubRepo: "https://github.com/JideOgun/MusicAndMovies",
+      GitHubRepo: "https://GitHub.com/JideOgun/MusicAndMovies",
     },
     {
       name: "Budget-Tracker",
       id: 4,
       imgurl: btImg,
-      technology: ["Javascript", " Node.js", " MongoDB", " Express"],
+      technology: ["JavaScript", " Node.js", " MongoDB", " Express"],
       website: "https://fathomless-ocean-98711.herokuapp.com/",
       description:
         "Progressive Web Application that enables users to post transactions even when there is no network connectivity",
-      githubRepo: "",
+      GitHubRepo: "https://GitHub.com/JideOgun/Jides-PWA-Budget-Tracker",
     },
     {
       name: "Jides CMS Tech-Blog",
       id: 5,
       imgurl: cmsImg,
-      technology: ["Javascript", " Heroku", " MySQL", " Sequelize ORM", " Express"],
+      technology: ["JavaScript", " Heroku", " MySQL", " Sequelize", " Express"],
       website: "https://peaceful-stream-28816.herokuapp.com/",
       description:
         "Content management Blog-Site where developers(users) can publish/edit/delete blog posts and comment on other developers(users) posts as well.",
-      githubRepo: "https://github.com/JideOgun/Jides-CMS-Style-Blog-Site",
+      GitHubRepo: "https://GitHub.com/JideOgun/Jides-CMS-Style-Blog-Site",
     },
     {
       name: "Weather-Dashboard",
       id: 6,
       imgurl: wdImg,
-      technology: ["Javascript", " jQuery", " HTML"],
-      website: "https://jideogun.github.io/weather-dashboard/",
+      technology: ["JavaScript", " jQuery", " HTML"],
+      website: "https://jideogun.GitHub.io/weather-dashboard/",
       description:
         "A web application showing the weather forecast for cities entered into the search bar. ",
-      githubRepo: "https://github.com/JideOgun/weather-dashboard",
+      GitHubRepo: "https://GitHub.com/JideOgun/weather-dashboard",
     },
     {
       name: "Work-Day Scheduler",
       id: 7,
       imgurl: wdsImg,
-      technology: ["Javascript", " HTML", " CSS"],
-      website: "https://jideogun.github.io/work-day-scheduler/",
+      technology: ["JavaScript", " HTML", " CSS"],
+      website: "https://jideogun.GitHub.io/work-day-scheduler/",
       description:
         "Work day scheduler that uses different colors to communicate past, present and future events to the user.",
-      githubRepo: "https://github.com/JideOgun/work-day-scheduler",
+      GitHubRepo: "https://GitHub.com/JideOgun/work-day-scheduler",
     },
   ]);
 
@@ -111,9 +112,9 @@ function Projects() {
                 Click to see {project.name}
               </a>
               <Card.Text className='technologies'>{`${project.technology}`}</Card.Text>
-              <Card.Text className="githubRepo">
-                <a className="githubRepo" href={project.githubRepo}>
-                  Github Repo
+              <Card.Text className="GitHubRepo">
+                <a className="GitHubRepo" href={project.GitHubRepo}>
+                  GitHub Repo
                 </a>
               </Card.Text>
               <Card.Body className="description">
@@ -137,9 +138,9 @@ function Projects() {
               </a>
               <div className='cardText'>
               <Card.Text>{project.technology}</Card.Text>
-              <Card.Text className="githubRepo">
-                <a className="githubRepo" href={project.githubRepo}>
-                  Click to view Github Repo
+              <Card.Text className="GitHubRepo">
+                <a className="GitHubRepo" href={project.GitHubRepo}>
+                  Click to view GitHub Repo
                 </a>
               </Card.Text>
               <Card.Body className="description">
