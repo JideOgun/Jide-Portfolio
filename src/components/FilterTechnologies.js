@@ -8,7 +8,7 @@ function FilterTech(props) {
     { name: "HTML", id: 3 },
     { name: "CSS", id: 4 },
     { name: "MySQL", id: 5 },
-    { name: "Javascript", id: 6 },
+    { name: "JavaScript", id: 6 },
     { name: "jQuery", id: 7 },
     { name: "MongoDB", id: 8 },
     { name: "Express", id: 9 },
@@ -41,7 +41,7 @@ function FilterTech(props) {
 
       {technologies.map((tech) => {
         return (
-            <Col xs={1} className="checkboxCol">
+            <Col xs={1} className="checkboxCol" key={tech.id}>
               <label htmlFor={tech.id} key={tech.id}>
             <span>{tech.name}{" "}<input
               type="checkbox"

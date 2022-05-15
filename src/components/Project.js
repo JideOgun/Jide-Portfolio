@@ -17,12 +17,12 @@ function Projects() {
       imgurl: hawker,
       technology: [
         "JavaScript",
-        " HTML",
-        " CSS",
-        " GraphQL",
-        " MongoDB",
-        " Express",
-        "GraphQL"
+        "HTML",
+        "CSS",
+        "GraphQL",
+        "MongoDB",
+        "Express",
+        "GraphQL",
       ],
       website: "https://texas-hawker.herokuapp.com/",
       description:
@@ -35,10 +35,10 @@ function Projects() {
       imgurl: teksessImg,
       technology: [
         "Node.js",
-        " JavaScript",
-        " Sequelize",
-        " MySQL",
-        " Express",
+        "JavaScript",
+        "Sequelize ORM",
+        "MySQL",
+        "Express",
       ],
       website: "https://teksess.herokuapp.com/",
       description:
@@ -49,7 +49,7 @@ function Projects() {
       name: "Music-And-Movies",
       id: 3,
       imgurl: mmImg,
-      technology: ["JavaScript", " HTML", " CSS", " RestAPI", " GitHub"],
+      technology: ["JavaScript", "HTML", "CSS", "RestAPI", "GitHub"],
       website: "https://jideogun.GitHub.io/MusicAndMovies/index.html",
       description: "Web app displaying music and movie information",
       GitHubRepo: "https://GitHub.com/JideOgun/MusicAndMovies",
@@ -58,7 +58,7 @@ function Projects() {
       name: "Budget-Tracker",
       id: 4,
       imgurl: btImg,
-      technology: ["JavaScript", " Node.js", " MongoDB", " Express"],
+      technology: ["JavaScript", "Node.js", "MongoDB", "Express"],
       website: "https://fathomless-ocean-98711.herokuapp.com/",
       description:
         "Progressive Web Application that enables users to post transactions even when there is no network connectivity",
@@ -68,7 +68,7 @@ function Projects() {
       name: "Jides CMS Tech-Blog",
       id: 5,
       imgurl: cmsImg,
-      technology: ["JavaScript", " Heroku", " MySQL", " Sequelize", " Express"],
+      technology: ["JavaScript", "Heroku", "MySQL", "Sequelize ORM", "Express"],
       website: "https://peaceful-stream-28816.herokuapp.com/",
       description:
         "Content management Blog-Site where developers(users) can publish/edit/delete blog posts and comment on other developers(users) posts as well.",
@@ -78,7 +78,7 @@ function Projects() {
       name: "Weather-Dashboard",
       id: 6,
       imgurl: wdImg,
-      technology: ["JavaScript", " jQuery", " HTML"],
+      technology: ["JavaScript", "jQuery", "HTML"],
       website: "https://jideogun.GitHub.io/weather-dashboard/",
       description:
         "A web application showing the weather forecast for cities entered into the search bar. ",
@@ -88,7 +88,7 @@ function Projects() {
       name: "Work-Day Scheduler",
       id: 7,
       imgurl: wdsImg,
-      technology: ["JavaScript", " HTML", " CSS"],
+      technology: ["JavaScript", "HTML", "CSS"],
       website: "https://jideogun.GitHub.io/work-day-scheduler/",
       description:
         "Work day scheduler that uses different colors to communicate past, present and future events to the user.",
@@ -104,22 +104,20 @@ function Projects() {
         return (
           <Col key={project.id}>
             <Card className="projectCard">
-              <Card.Img
-                src={`${project.imgurl}`}
-              />
-              <div className='cardText'>
-              <a id="linkText" className="imgurl" href={`${project.website}`}>
-                Click to see {project.name}
-              </a>
-              <Card.Text className='technologies'>{`${project.technology}`}</Card.Text>
-              <Card.Text className="GitHubRepo">
-                <a className="GitHubRepo" href={project.GitHubRepo}>
-                  GitHub Repo
+              <Card.Img src={`${project.imgurl}`} />
+              <div className="cardText">
+                <a id="linkText" className="imgurl" href={`${project.website}`}>
+                  Click to see {project.name}
                 </a>
-              </Card.Text>
-              <Card.Body className="description">
-                {project.description}
-              </Card.Body>
+                <Card.Text className="technologies">{`${project.technology}`}</Card.Text>
+                <Card.Text className="GitHubRepo">
+                  <a className="GitHubRepo" href={project.GitHubRepo}>
+                    GitHub Repo
+                  </a>
+                </Card.Text>
+                <Card.Body className="description">
+                  {project.description}
+                </Card.Body>
               </div>
             </Card>
           </Col>
@@ -130,23 +128,21 @@ function Projects() {
         return (
           <Col key={project.id}>
             <Card className="projectCard">
-              <Card.Img
-                src={`${project.imgurl}`}
-              />
+              <Card.Img src={`${project.imgurl}`} />
               <a id="linkText" className="imgurl" href={`${project.website}`}>
                 {project.name}
               </a>
-              <div className='cardText'>
-              <Card.Text>{project.technology}</Card.Text>
-              <Card.Text className="GitHubRepo">
-                <a className="GitHubRepo" href={project.GitHubRepo}>
-                  Click to view GitHub Repo
-                </a>
-              </Card.Text>
-              <Card.Body className="description">
-                {project.description}
-              </Card.Body>
-              </div>  
+              <div className="cardText">
+                <Card.Text>{project.technology}</Card.Text>
+                <Card.Text className="GitHubRepo">
+                  <a className="GitHubRepo" href={project.GitHubRepo}>
+                    Click to view GitHub Repo
+                  </a>
+                </Card.Text>
+                <Card.Body className="description">
+                  {project.description}
+                </Card.Body>
+              </div>
             </Card>
           </Col>
         );
@@ -155,7 +151,7 @@ function Projects() {
   };
 
   return (
-    <div className='wrapper'>
+    <div className="wrapper">
       <FilterTech
         techProj={techProjects}
         setTechProjects={(proj) => setTechProjects(proj)}
