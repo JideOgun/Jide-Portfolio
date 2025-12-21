@@ -7,13 +7,33 @@ import cmsImg from "../assets/images/JidesCmsTechBlog.jpg";
 import btImg from "../assets/images/budgetTracker.jpg";
 import wdsImg from "../assets/images/workdayscheduler.gif";
 import hawker from "../assets/images/hawkerHomepage.jpg";
+import prodjImg from "../assets/images/prodj-homepage.png";
 import FilterTech from "./FilterTechnologies";
 
 function Projects() {
   const [techProjects, setTechProjects] = useState([
     {
-      name: "Hawker",
+      name: "Pro-DJ",
       id: 1,
+      imgurl: prodjImg,
+      technology: [
+        "Next.js",
+        "TypeScript",
+        "React",
+        "Node.js",
+        "Prisma",
+        "MongoDB",
+        "Docker",
+        "Express",
+      ],
+      website: "https://www.bookprodj.com/",
+      description:
+        "Multi-DJ Booking Platform that allows users to find and book professional DJs for events. Features multiple genres, easy booking process with instant confirmation, and secure payment processing.",
+      GitHubRepo: "#", // TODO: Add GitHub repository URL if available
+    },
+    {
+      name: "Hawker",
+      id: 2,
       imgurl: hawker,
       technology: [
         "JavaScript",
@@ -22,7 +42,6 @@ function Projects() {
         "GraphQL",
         "MongoDB",
         "Express",
-        "GraphQL",
       ],
       website: "https://texas-hawker.herokuapp.com/",
       description:
@@ -31,7 +50,7 @@ function Projects() {
     },
     {
       name: "Teksess",
-      id: 2,
+      id: 3,
       imgurl: teksessImg,
       technology: [
         "Node.js",
@@ -47,7 +66,7 @@ function Projects() {
     },
     {
       name: "Music-And-Movies",
-      id: 3,
+      id: 4,
       imgurl: mmImg,
       technology: ["JavaScript", "HTML", "CSS", "RestAPI", "GitHub"],
       website: "https://jideogun.GitHub.io/MusicAndMovies/index.html",
@@ -56,7 +75,7 @@ function Projects() {
     },
     {
       name: "Budget-Tracker",
-      id: 4,
+      id: 5,
       imgurl: btImg,
       technology: ["JavaScript", "Node.js", "MongoDB", "Express"],
       website: "https://fathomless-ocean-98711.herokuapp.com/",
@@ -66,7 +85,7 @@ function Projects() {
     },
     {
       name: "Jides CMS Tech-Blog",
-      id: 5,
+      id: 6,
       imgurl: cmsImg,
       technology: ["JavaScript", "Heroku", "MySQL", "Sequelize ORM", "Express"],
       website: "https://peaceful-stream-28816.herokuapp.com/",
@@ -76,7 +95,7 @@ function Projects() {
     },
     {
       name: "Weather-Dashboard",
-      id: 6,
+      id: 7,
       imgurl: wdImg,
       technology: ["JavaScript", "jQuery", "HTML"],
       website: "https://jideogun.GitHub.io/weather-dashboard/",
@@ -86,7 +105,7 @@ function Projects() {
     },
     {
       name: "Work-Day Scheduler",
-      id: 7,
+      id: 8,
       imgurl: wdsImg,
       technology: ["JavaScript", "HTML", "CSS"],
       website: "https://jideogun.GitHub.io/work-day-scheduler/",
@@ -96,7 +115,7 @@ function Projects() {
     },
   ]);
 
-  const [allTech, filteredTech] = useState([]);
+  const [allTech, setFilteredTech] = useState([]);
 
   const renderCard = () => {
     if (allTech.length === 0) {
@@ -156,7 +175,7 @@ function Projects() {
         techProj={techProjects}
         setTechProjects={(proj) => setTechProjects(proj)}
         allTech={allTech}
-        filteredTech={filteredTech}
+        filteredTech={setFilteredTech}
       />
 
       <Container>

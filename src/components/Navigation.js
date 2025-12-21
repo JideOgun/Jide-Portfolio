@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import { Navbar, Nav } from "react-bootstrap";
 
 function Navigation({currentPage, handlePageChange}) {
-  console.log(currentPage)
 
 
   return (

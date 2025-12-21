@@ -1,59 +1,66 @@
 import React, { useState } from "react";
-import {  Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 function FilterTech(props) {
   const { techProj, filteredTech } = props;
   const technologies = [
-    { name: "Node.js", id: 1 },
-    { name: "Sequelize ORM", id: 2 },
-    { name: "HTML", id: 3 },
-    { name: "CSS", id: 4 },
-    { name: "MySQL", id: 5 },
-    { name: "JavaScript", id: 6 },
-    { name: "jQuery", id: 7 },
-    { name: "MongoDB", id: 8 },
-    { name: "Express", id: 9 },
-    { name: "GraphQL", id: 10 },
+    { name: "React", id: 1 },
+    { name: "Next.js", id: 2 },
+    { name: "TypeScript", id: 3 },
+    { name: "Node.js", id: 4 },
+    { name: "Prisma", id: 5 },
+    { name: "Docker", id: 6 },
+    { name: "Sequelize ORM", id: 7 },
+    { name: "HTML", id: 8 },
+    { name: "CSS", id: 9 },
+    { name: "MySQL", id: 10 },
+    { name: "JavaScript", id: 11 },
+    { name: "jQuery", id: 12 },
+    { name: "MongoDB", id: 13 },
+    { name: "Express", id: 14 },
+    { name: "GraphQL", id: 15 },
   ];
 
   const [checkbox, setCheckbox] = useState(true);
-  
-  
+
   const handleCheckbox = (e) => {
     setCheckbox(!checkbox);
-    console.log(e.target.checked, e.target.name);
-    console.log(techProj);
-    
- let newTech = techProj.filter((tech) => {
-      console.log(tech.technology);
-      return tech.technology.includes(`${e.target.name}`)
+
+    let newTech = techProj.filter((tech) => {
+      return tech.technology.includes(e.target.name);
     });
-     console.log(newTech);
-     if(!e.target.checked) {
-       newTech=techProj
-     } 
-  filteredTech(newTech)
+
+    if (!e.target.checked) {
+      newTech = techProj;
+    }
+
+    filteredTech(newTech);
   };
 
   return (
     <Container>
-    Full Stack Projects - will filter according to technology
       <Row>
-
-      {technologies.map((tech) => {
-        return (
+        <Col xs={12}>
+          <h3>Full Stack Projects - Filter by Technology</h3>
+        </Col>
+      </Row>
+      <Row>
+        {technologies.map((tech) => {
+          return (
             <Col xs={1} className="checkboxCol" key={tech.id}>
               <label htmlFor={tech.id} key={tech.id}>
-            <span>{tech.name}{" "}<input
-              type="checkbox"
-              onClick={handleCheckbox}
-              data-id={tech.id}
-              name={tech.name}
-            ></input></span>
-            
-          </label>
-            </Col>  
-        );
-      })}
+                <span>
+                  {tech.name}{" "}
+                  <input
+                    type="checkbox"
+                    onClick={handleCheckbox}
+                    data-id={tech.id}
+                    name={tech.name}
+                  ></input>
+                </span>
+              </label>
+            </Col>
+          );
+        })}
       </Row>
     </Container>
   );

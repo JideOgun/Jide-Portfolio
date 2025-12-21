@@ -9,9 +9,9 @@ import Projects from './Project';
 function Header() {
     
 
-    const [currentPage, setCurrentPage] = useState('Home') 
-    // console.log(currentPage)
-      const handleRender = () => {
+    const [currentPage, setCurrentPage] = useState('Home');
+    
+    const handleRender = () => {
         if(currentPage === 'Projects') {
             return <Projects/>
         }
