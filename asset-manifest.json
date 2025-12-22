@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/Jide-Portfolio/static/css/main.7b09d55b.css",
-    "main.js": "/Jide-Portfolio/static/js/main.52a95a59.js",
+    "main.css": "/Jide-Portfolio/static/css/main.78021677.css",
+    "main.js": "/Jide-Portfolio/static/js/main.6b4a2369.js",
     "static/js/787.2ee7312c.chunk.js": "/Jide-Portfolio/static/js/787.2ee7312c.chunk.js",
     "static/media/IMG_0655.jpg": "/Jide-Portfolio/static/media/IMG_0655.e86862c6047f1532cac1.jpg",
     "static/media/workdayscheduler.gif": "/Jide-Portfolio/static/media/workdayscheduler.5b3f62cdcc4cafa34102.gif",
+    "static/media/prodj-homepage.png": "/Jide-Portfolio/static/media/prodj-homepage.15999e5b10749198af23.png",
     "static/media/hawkerHomepage.jpg": "/Jide-Portfolio/static/media/hawkerHomepage.2f68c62983cab8cfbc88.jpg",
     "static/media/weather-dashboard.JPG": "/Jide-Portfolio/static/media/weather-dashboard.61b690a8b5f877866f07.JPG",
     "static/media/JidesCmsTechBlog.jpg": "/Jide-Portfolio/static/media/JidesCmsTechBlog.cea5ccc5552c286de079.jpg",
@@ -13,12 +14,12 @@
     "static/media/budgetTracker.jpg": "/Jide-Portfolio/static/media/budgetTracker.05e8e0c80d983b3c745e.jpg",
     "static/media/homepage.JPG": "/Jide-Portfolio/static/media/homepage.857df8786690f60f6c9d.JPG",
     "index.html": "/Jide-Portfolio/index.html",
-    "main.7b09d55b.css.map": "/Jide-Portfolio/static/css/main.7b09d55b.css.map",
-    "main.52a95a59.js.map": "/Jide-Portfolio/static/js/main.52a95a59.js.map",
+    "main.78021677.css.map": "/Jide-Portfolio/static/css/main.78021677.css.map",
+    "main.6b4a2369.js.map": "/Jide-Portfolio/static/js/main.6b4a2369.js.map",
     "787.2ee7312c.chunk.js.map": "/Jide-Portfolio/static/js/787.2ee7312c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b09d55b.css",
-    "static/js/main.52a95a59.js"
+    "static/css/main.78021677.css",
+    "static/js/main.6b4a2369.js"
   ]
 }
