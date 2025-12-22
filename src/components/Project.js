@@ -128,7 +128,11 @@ function Projects() {
                 <a id="linkText" className="imgurl" href={`${project.website}`}>
                   Click to see {project.name}
                 </a>
-                <Card.Text className="technologies">{`${project.technology}`}</Card.Text>
+                <div className="technologies">
+                  {project.technology.map((tech, index) => (
+                    <span key={index} className="tech-tag">{tech}</span>
+                  ))}
+                </div>
                 <Card.Text className="GitHubRepo">
                   <a className="GitHubRepo" href={project.GitHubRepo}>
                     GitHub Repo
@@ -152,7 +156,11 @@ function Projects() {
                 {project.name}
               </a>
               <div className="cardText">
-                <Card.Text>{project.technology}</Card.Text>
+                <div className="technologies">
+                  {project.technology.map((tech, index) => (
+                    <span key={index} className="tech-tag">{tech}</span>
+                  ))}
+                </div>
                 <Card.Text className="GitHubRepo">
                   <a className="GitHubRepo" href={project.GitHubRepo}>
                     Click to view GitHub Repo

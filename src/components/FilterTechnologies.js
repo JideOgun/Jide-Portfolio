@@ -21,12 +21,22 @@ function FilterTech(props) {
   ];
 
   const [checkbox, setCheckbox] = useState(true);
+  const [checkedTechs, setCheckedTechs] = useState(new Set());
 
   const handleCheckbox = (e) => {
     setCheckbox(!checkbox);
+    const techName = e.target.name;
+    const newCheckedTechs = new Set(checkedTechs);
+    
+    if (e.target.checked) {
+      newCheckedTechs.add(techName);
+    } else {
+      newCheckedTechs.delete(techName);
+    }
+    setCheckedTechs(newCheckedTechs);
 
     let newTech = techProj.filter((tech) => {
-      return tech.technology.includes(e.target.name);
+      return tech.technology.includes(techName);
     });
 
     if (!e.target.checked) {
@@ -46,17 +56,21 @@ function FilterTech(props) {
       <Row>
         {technologies.map((tech) => {
           return (
-            <Col xs={1} className="checkboxCol" key={tech.id}>
-              <label htmlFor={tech.id} key={tech.id}>
-                <span>
-                  {tech.name}{" "}
-                  <input
-                    type="checkbox"
-                    onClick={handleCheckbox}
-                    data-id={tech.id}
-                    name={tech.name}
-                  ></input>
-                </span>
+            <Col xs={6} sm={4} md={3} lg={2} className="checkboxCol" key={tech.id}>
+              <label 
+                htmlFor={`tech-${tech.id}`} 
+                className={`checkbox-label ${checkedTechs.has(tech.name) ? 'checked' : ''}`} 
+                key={tech.id}
+              >
+                <input
+                  type="checkbox"
+                  id={`tech-${tech.id}`}
+                  onClick={handleCheckbox}
+                  data-id={tech.id}
+                  name={tech.name}
+                  className="checkbox-input"
+                />
+                <span className="checkbox-text">{tech.name}</span>
               </label>
             </Col>
           );
